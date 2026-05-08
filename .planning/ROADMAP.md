@@ -35,7 +35,9 @@ Participants can follow the workshop live and return to the same URL afterward t
   3. Pushing a branch creates a Vercel preview deployment; merging to `main` updates production — both auto-triggered without manual deploy steps.
   4. Visiting a non-root slide URL (e.g. `<preview>/3`) on a fresh browser tab loads slide 3 without a 404 (SPA rewrite verified).
   5. README documents setup, dev, build, deploy, and the public production URL; `.gitignore` excludes `node_modules/`, `dist/`, `.vercel/`, and Bun artifacts.
-**Plans:** TBD
+**Plans:** 2 plans
+- [ ] 01.1-bun-slidev-scaffold-PLAN.md — Scaffold Slidev via bun create slidev, pin Bun + Slidev versions, trim to 3-slide placeholder deck, write .gitignore + README skeleton (SCAF-01..05)
+- [ ] 01.2-vercel-deploy-PLAN.md — vercel.json with SPA rewrite + Bun build pins, vercel link + first preview/prod deploy, attempt vercel git connect with documented fallback, verify deep-link on /3, finalize README Deploy section (DEPL-01..05)
 
 ### Phase 2: Theme & Visual Identity
 **Goal:** A reviewer opening the deck immediately reads it as Claude/Anthropic-adjacent (dark, monospace, minimal) with code blocks readable on a projector and zero styling artifacts in presenter mode.
