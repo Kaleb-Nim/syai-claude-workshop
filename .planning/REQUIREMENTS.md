@@ -26,7 +26,7 @@ Requirements for initial release. Each maps to roadmap phases.
 ### Theme
 
 - [x] **THEM-01**: Deck uses `@slidev/theme-default` with `colorSchema: dark` set in headmatter
-- [ ] **THEM-02**: UnoCSS shortcuts (`bg-main`, `text-accent`, etc.) defined in `uno.config.ts` provide tokens for backgrounds, text, accents, and code surfaces
+- [x] **THEM-02**: UnoCSS shortcuts (`bg-main`, `text-accent`, etc.) defined in `uno.config.ts` provide tokens for backgrounds, text, accents, and code surfaces
 - [x] **THEM-03**: Font stack is monospace-forward (e.g. JetBrains Mono for code, Inter or system-sans for headings) configured via Slidev `fonts:` headmatter
 - [x] **THEM-04**: Shiki code theme selected and verified ≥4.5:1 contrast on dark background; explicit Shiki language list pinned (ts, tsx, bash, json, md, yaml at minimum)
 - [ ] **THEM-05**: All custom CSS selectors are scoped under `.slidev-layout` so styles do not leak into presenter mode chrome
@@ -111,7 +111,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | DEPL-04 | Phase 1 | Complete |
 | DEPL-05 | Phase 1 | Complete |
 | THEM-01 | Phase 2 | Complete |
-| THEM-02 | Phase 2 | Pending |
+| THEM-02 | Phase 2 | Complete |
 | THEM-03 | Phase 2 | Complete |
 | THEM-04 | Phase 2 | Complete |
 | THEM-05 | Phase 2 | Pending |

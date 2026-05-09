@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 02-01-PLAN.md
-last_updated: "2026-05-09T03:23:54.890Z"
+stopped_at: Completed 02-02-PLAN.md
+last_updated: "2026-05-09T03:26:11.652Z"
 progress:
   total_phases: 4
   completed_phases: 1
   total_plans: 6
-  completed_plans: 3
-  percent: 50
+  completed_plans: 4
+  percent: 67
 ---
 
 # Project State: syai-claude-workshop
@@ -35,7 +35,7 @@ Plan: 1 of 4
 - **Phase:** 1 — Scaffold & Deploy — COMPLETE 2026-05-09
 - **Plan:** 01.2-vercel-deploy — COMPLETE (human verification approved 2026-05-09)
 - **Status:** Executing Phase 02
-- **Progress:** [█████░░░░░] 50%
+- **Progress:** [███████░░░] 67%
 
 ## Performance Metrics
 
@@ -51,6 +51,7 @@ Plan: 1 of 4
 | 01.1 files created | 5 (package.json, bun.lock, slides.md, .gitignore, README.md) |
 | Phase 01 P02 | 2m | 3 tasks | 3 files |
 | Phase 02 P01 | 4min | 1 tasks | 1 files |
+| Phase 02-theme-visual-identity P02 | 1min | 1 tasks | 1 files |
 
 ## Accumulated Context
 
@@ -66,6 +67,7 @@ Plan: 1 of 4
 | `vercel.json` SPA rewrite mandatory in Phase 1 | research/PITFALLS.md (#1) | Direct slide-URL 404s would break the takeaway promise. |
 | GitHub→Vercel auto-deploy wired via dashboard (not CLI) | 01.2 Task 4 | `vercel git connect` failed (no remote configured); user completed manual dashboard link — DEPL-01 satisfied. |
 | DEPL-04 verified on production URL not preview | 01.2 Task 3 | Vercel deployment protection blocks curl on preview URLs (HTTP 401); production URL is public and equivalent. |
+| UnoCSS shortcuts as palette contract surface | 02-02 uno.config.ts | All six D-08 shortcut tokens encode D-01 palette verbatim; no inline hex in slides or CSS. No presets added — Slidev 52.x bundles its own. |
 
 ### Open Questions / TODOs
 
@@ -94,9 +96,9 @@ None.
 - `/Users/kalebnim/Documents/GitHub/syai-claude-workshop/.planning/ROADMAP.md`
 - `/Users/kalebnim/Documents/GitHub/syai-claude-workshop/.planning/STATE.md`
 
-**Last session:** 2026-05-09T03:23:54.885Z
-**Stopped at:** Completed 02-01-PLAN.md
-**Next action:** Begin Phase 02 (Theme & Visual Identity) — run `/gsd-execute-phase 02`
+**Last session:** 2026-05-09T03:26:11.647Z
+**Stopped at:** Completed 02-02-PLAN.md
+**Next action:** Continue Phase 02 — execute 02-03 (style.css)
 
 ---
 *State initialized: 2026-05-08*
