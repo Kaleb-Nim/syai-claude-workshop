@@ -2,14 +2,14 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: planning
-last_updated: "2026-05-08T13:46:44.559Z"
+status: executing
+last_updated: "2026-05-09T00:11:04Z"
 progress:
   total_phases: 4
   completed_phases: 0
-  total_plans: 0
-  completed_plans: 0
-  percent: 0
+  total_plans: 2
+  completed_plans: 1
+  percent: 25
 ---
 
 # Project State: syai-claude-workshop
@@ -23,15 +23,18 @@ progress:
 
 **Core value:** Participants can follow the workshop live and return to the same URL afterward to step through the material at their own pace — without losing place, formatting, or copyable code.
 
-**Current focus:** Phase 1 — Scaffold & Deploy
+**Current focus:** Phase 01 — scaffold-deploy
 
 ## Current Position
 
+Phase: 01 (scaffold-deploy) — EXECUTING
+Plan: 2 of 2 (next: 01.2-vercel-deploy)
+
 - **Milestone:** v1
 - **Phase:** 1 — Scaffold & Deploy
-- **Plan:** None (pending `/gsd-plan-phase 1`)
-- **Status:** Roadmap complete; awaiting phase planning
-- **Progress:** Phase 0/4 complete `[░░░░░░░░░░] 0%`
+- **Plan:** 01.1-bun-slidev-scaffold — COMPLETE
+- **Status:** Executing Phase 01 (Plan 01.1 done; Plan 01.2 pending)
+- **Progress:** Phase 0/4 complete (1/2 plans done) `[█░░░░░░░░░] 13%`
 
 ## Performance Metrics
 
@@ -41,8 +44,10 @@ progress:
 | Phases complete | 0 |
 | v1 requirements | 30 |
 | v1 requirements mapped | 30 (100%) |
-| Plans created | 0 |
-| Plans complete | 0 |
+| Plans created | 2 |
+| Plans complete | 1 |
+| 01.1 duration | 3m |
+| 01.1 files created | 5 (package.json, bun.lock, slides.md, .gitignore, README.md) |
 
 ## Accumulated Context
 
@@ -61,7 +66,7 @@ progress:
 
 - Copy-button implementation choice (Shiki transformer vs `global-bottom.vue` overlay vs per-component slot wrapper) — decide during Phase 3 planning; quick research recommended.
 - Vercel `routerMode: history` SPA rewrite verification — confirm on first preview deploy in Phase 1; fallback to `routerMode: 'hash'` if problematic.
-- Bun version pin — choose tested version for `packageManager` field during Phase 1 scaffolding.
+- Bun version pin — RESOLVED: bun@1.3.5 pinned in packageManager field.
 
 ### Blockers
 
@@ -84,7 +89,8 @@ None.
 - `/Users/kalebnim/Documents/GitHub/syai-claude-workshop/.planning/ROADMAP.md`
 - `/Users/kalebnim/Documents/GitHub/syai-claude-workshop/.planning/STATE.md`
 
-**Next action:** Run `/gsd-plan-phase 1` to decompose Phase 1 (Scaffold & Deploy) into executable plans.
+**Last session:** 2026-05-09 — Executed plan 01.1-bun-slidev-scaffold. Slidev 52.15.1 + Bun 1.3.5 scaffolded; dev server boots; build produces dist/.
+**Next action:** Execute plan 01.2-vercel-deploy to wire Vercel hosting and verify SPA rewrite on live URL.
 
 ---
 *State initialized: 2026-05-08*

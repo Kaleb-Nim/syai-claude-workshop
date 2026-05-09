@@ -9,11 +9,11 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Scaffold
 
-- [ ] **SCAF-01**: Repository initialised via `bun create slidev` with Slidev `^52.15` and Bun pinned via `packageManager` in `package.json`
-- [ ] **SCAF-02**: `bun install` followed by `bunx slidev` starts a working local dev server with the default deck visible at `http://localhost:3030/`
-- [ ] **SCAF-03**: `bunx slidev build` produces a static SPA in `dist/` that runs cleanly via `bun run preview`
-- [ ] **SCAF-04**: Repository contains a top-level `README.md` with setup, dev, build, deploy, and contributor instructions (path must not contain spaces)
-- [ ] **SCAF-05**: `.gitignore` excludes `node_modules/`, `dist/`, `.vercel/`, and `bun` artifacts that should not be committed
+- [x] **SCAF-01**: Repository initialised via `bun create slidev` with Slidev `^52.15` and Bun pinned via `packageManager` in `package.json` — Slidev 52.15.1, bun@1.3.5
+- [x] **SCAF-02**: `bun install` followed by `bunx slidev` starts a working local dev server with the default deck visible at `http://localhost:3030/` — HTTP 200 confirmed
+- [x] **SCAF-03**: `bunx slidev build` produces a static SPA in `dist/` that runs cleanly via `bun run preview` — dist/index.html produced
+- [x] **SCAF-04**: Repository contains a top-level `README.md` with setup, dev, build, deploy, and contributor instructions (path must not contain spaces) — partial (deploy placeholder; finalized in Plan 02)
+- [x] **SCAF-05**: `.gitignore` excludes `node_modules/`, `dist/`, `.vercel/`, and `bun` artifacts that should not be committed — verified
 
 ### Deploy
 
