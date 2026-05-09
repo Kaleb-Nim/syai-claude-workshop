@@ -49,11 +49,11 @@ Participants can follow the workshop live and return to the same URL afterward t
   3. A code sample on a placeholder slide is readable with ≥4.5:1 contrast against the dark background, with an explicit Shiki language list pinned (ts, tsx, bash, json, md, yaml minimum).
   4. Opening `/presenter/` on any placeholder slide shows the presenter chrome intact — no global selectors leaking into thumbnails or sidebar (all custom CSS scoped under `.slidev-layout`).
   5. A clean visual review confirms Claude-adjacent identity (dark, monospace, minimal chrome) without copying or infringing Anthropic branding.
-**Plans:** 2/4 plans executed
+**Plans:** 3/4 plans executed
 **UI hint:** yes
 - [x] 02-01-PLAN.md — slides.md headmatter (colorSchema dark, Inter+JetBrains Mono fonts, Shiki vitesse-dark, pinned langs) — THEM-01, THEM-03, THEM-04
 - [x] 02-02-PLAN.md — uno.config.ts shortcut tokens (bg-main, bg-surface-code, text-main, text-dim, text-accent, border-accent) — THEM-02
-- [ ] 02-03-PLAN.md — style.css with :root variables and .slidev-layout-scoped code-block frame + inline-code pill — THEM-04, THEM-05
+- [x] 02-03-PLAN.md — style.css with :root variables and .slidev-layout-scoped code-block frame + inline-code pill — THEM-04, THEM-05 — COMPLETE 2026-05-09
 - [ ] 02-04-PLAN.md — verification ladder: build, preview, contrast ≥4.5:1, presenter scoping, Vercel preview review — THEM-04, THEM-05, THEM-06
 
 ### Phase 3: Components & Persistent UI
@@ -97,7 +97,7 @@ Participants can follow the workshop live and return to the same URL afterward t
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Scaffold & Deploy | 2/2 | Complete | 2026-05-09 |
-| 2. Theme & Visual Identity | 2/4 | In Progress|  |
+| 2. Theme & Visual Identity | 3/4 | In Progress|  |
 | 3. Components & Persistent UI | 0/0 | Not started | — |
 | 4. Content Slots, Authoring & Handoff | 0/0 | Not started | — |
 

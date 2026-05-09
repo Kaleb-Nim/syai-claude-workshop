@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 02-02-PLAN.md
-last_updated: "2026-05-09T03:26:11.652Z"
+stopped_at: Completed 02-03-PLAN.md
+last_updated: "2026-05-09T03:30:00Z"
 progress:
   total_phases: 4
   completed_phases: 1
   total_plans: 6
-  completed_plans: 4
-  percent: 67
+  completed_plans: 5
+  percent: 83
 ---
 
 # Project State: syai-claude-workshop
@@ -52,6 +52,7 @@ Plan: 1 of 4
 | Phase 01 P02 | 2m | 3 tasks | 3 files |
 | Phase 02 P01 | 4min | 1 tasks | 1 files |
 | Phase 02-theme-visual-identity P02 | 1min | 1 tasks | 1 files |
+| Phase 02-theme-visual-identity P03 | 3min | 1 tasks | 1 files |
 
 ## Accumulated Context
 
@@ -68,6 +69,8 @@ Plan: 1 of 4
 | GitHub→Vercel auto-deploy wired via dashboard (not CLI) | 01.2 Task 4 | `vercel git connect` failed (no remote configured); user completed manual dashboard link — DEPL-01 satisfied. |
 | DEPL-04 verified on production URL not preview | 01.2 Task 3 | Vercel deployment protection blocks curl on preview URLs (HTTP 401); production URL is public and equivalent. |
 | UnoCSS shortcuts as palette contract surface | 02-02 uno.config.ts | All six D-08 shortcut tokens encode D-01 palette verbatim; no inline hex in slides or CSS. No presets added — Slidev 52.x bundles its own. |
+| pre[class*="shiki"] selector for code-block frame | 02-03 style.css | Attribute selector survives Shiki theme renames across Slidev upgrades; !important on bg-color overrides Shiki inline style (T-02-07 accepted). |
+| .slidev-layout scoping for all custom CSS | 02-03 style.css | D-14/D-15: no bare global selectors; presenter chrome stays default Slidev appearance. |
 
 ### Open Questions / TODOs
 
@@ -96,9 +99,9 @@ None.
 - `/Users/kalebnim/Documents/GitHub/syai-claude-workshop/.planning/ROADMAP.md`
 - `/Users/kalebnim/Documents/GitHub/syai-claude-workshop/.planning/STATE.md`
 
-**Last session:** 2026-05-09T03:26:11.647Z
-**Stopped at:** Completed 02-02-PLAN.md
-**Next action:** Continue Phase 02 — execute 02-03 (style.css)
+**Last session:** 2026-05-09T03:30:00Z
+**Stopped at:** Completed 02-03-PLAN.md
+**Next action:** Continue Phase 02 — execute 02-04 (verification ladder)
 
 ---
 *State initialized: 2026-05-08*
