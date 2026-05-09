@@ -19,7 +19,7 @@ Participants can follow the workshop live and return to the same URL afterward t
 ## Phases
 
 - [x] **Phase 1: Scaffold & Deploy** — Bun-Slidev project initialised and live on Vercel with deep-link routing verified — COMPLETE 2026-05-09
-- [ ] **Phase 2: Theme & Visual Identity** — Dark, monospace, Claude-adjacent token system applied without leaking into presenter chrome
+- [x] **Phase 2: Theme & Visual Identity** — Dark, monospace, Claude-adjacent token system applied without leaking into presenter chrome — COMPLETE 2026-05-09
 - [ ] **Phase 3: Components & Persistent UI** — Copy-to-clipboard control and persistent sidebar/progress indicator working in dev and built output
 - [ ] **Phase 4: Content Slots, Authoring & Handoff** — Empty chapter scaffolding plus authoring guide and handoff verification (presenter mode, PDF, projector readiness)
 
@@ -49,12 +49,12 @@ Participants can follow the workshop live and return to the same URL afterward t
   3. A code sample on a placeholder slide is readable with ≥4.5:1 contrast against the dark background, with an explicit Shiki language list pinned (ts, tsx, bash, json, md, yaml minimum).
   4. Opening `/presenter/` on any placeholder slide shows the presenter chrome intact — no global selectors leaking into thumbnails or sidebar (all custom CSS scoped under `.slidev-layout`).
   5. A clean visual review confirms Claude-adjacent identity (dark, monospace, minimal chrome) without copying or infringing Anthropic branding.
-**Plans:** 3/4 plans executed
+**Plans:** 4/4 plans executed
 **UI hint:** yes
 - [x] 02-01-PLAN.md — slides.md headmatter (colorSchema dark, Inter+JetBrains Mono fonts, Shiki vitesse-dark, pinned langs) — THEM-01, THEM-03, THEM-04
 - [x] 02-02-PLAN.md — uno.config.ts shortcut tokens (bg-main, bg-surface-code, text-main, text-dim, text-accent, border-accent) — THEM-02
 - [x] 02-03-PLAN.md — style.css with :root variables and .slidev-layout-scoped code-block frame + inline-code pill — THEM-04, THEM-05 — COMPLETE 2026-05-09
-- [ ] 02-04-PLAN.md — verification ladder: build, preview, contrast ≥4.5:1, presenter scoping, Vercel preview review — THEM-04, THEM-05, THEM-06
+- [x] 02-04-PLAN.md — verification ladder: build, preview, contrast ≥4.5:1, presenter scoping, Vercel preview review — THEM-04, THEM-05, THEM-06 — COMPLETE 2026-05-09
 
 ### Phase 3: Components & Persistent UI
 **Goal:** Participants in both live and self-paced modes can copy any code block in one click and always see where they are in the deck via a persistent navigation/progress indicator that does not break presenter mode.
@@ -97,7 +97,7 @@ Participants can follow the workshop live and return to the same URL afterward t
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Scaffold & Deploy | 2/2 | Complete | 2026-05-09 |
-| 2. Theme & Visual Identity | 3/4 | In Progress|  |
+| 2. Theme & Visual Identity | 4/4 | Complete | 2026-05-09 |
 | 3. Components & Persistent UI | 0/0 | Not started | — |
 | 4. Content Slots, Authoring & Handoff | 0/0 | Not started | — |
 
