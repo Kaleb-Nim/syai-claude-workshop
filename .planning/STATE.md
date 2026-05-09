@@ -4,13 +4,13 @@ milestone: v1.0
 milestone_name: milestone
 status: executing
 stopped_at: Completed 04-01-PLAN.md — slides.md orchestrator + intro/outro chapters
-last_updated: "2026-05-09T05:48:25.030Z"
+last_updated: "2026-05-09T05:49:03.361Z"
 progress:
   total_phases: 4
   completed_phases: 2
   total_plans: 11
-  completed_plans: 9
-  percent: 82
+  completed_plans: 10
+  percent: 91
 ---
 
 # Project State: syai-claude-workshop
@@ -36,8 +36,9 @@ Plan: 2 of 5
 - **Phase:** 2 — Theme & Visual Identity — COMPLETE 2026-05-09
 - **Plan:** 02-04 — COMPLETE (human verification approved 2026-05-09; THEM-04/05/06 closed)
 - **Plan:** 04-01 — COMPLETE 2026-05-09 (slides.md orchestrator + intro/outro chapters)
+- **Plan:** 04-04 — COMPLETE 2026-05-09 (Commands/Skills/Plugins chapter, 13 slides, CONT-04 satisfied)
 - **Status:** Executing Phase 04
-- **Progress:** [███████░░░] 73%
+- **Progress:** [█████████░] 91%
 
 ## Performance Metrics
 
@@ -57,6 +58,7 @@ Plan: 2 of 5
 | Phase 02-theme-visual-identity P03 | 3min | 1 tasks | 1 files |
 | Phase 02-theme-visual-identity P04 | 5min | 3 tasks | 1 files |
 | Phase 04-workshop-content-draft P01 | 1min | 3 tasks | 3 files |
+| Phase 04-workshop-content-draft P04 | 2min | 1 tasks | 1 files |
 
 ## Accumulated Context
 
@@ -77,6 +79,9 @@ Plan: 2 of 5
 | .slidev-layout scoping for all custom CSS | 02-03 style.css | D-14/D-15: no bare global selectors; presenter chrome stays default Slidev appearance. |
 | vitesse-dark locked as Shiki theme | 02-04 verification | contrast 13.07:1 on #14110E panel — PASS; D-12 no fallback needed. |
 | Claude-adjacent identity confirmed | 02-04 human approval | Human reviewer approved 2026-05-09: dark + monospace + minimal, same family as Anthropic, clearly distinct. |
+| ASCII pyramid for Commands/Skills/Plugins mental model | 04-04 | Cleaner hierarchy representation than bullets for a three-layer primitive model. |
+| 3 ✓ Check: callouts in commands/skills chapter | 04-04 | One per walkthrough slide — natural sync points exceed minimum-1 requirement per D-11. |
+| VERIFY markers on argument syntax and plugin manifest | 04-04 | D-16: mark uncertain fields rather than invent. Two fields left for instructor spot-check. |
 
 ### Open Questions / TODOs
 
@@ -105,9 +110,9 @@ None.
 - `/Users/kalebnim/Documents/GitHub/syai-claude-workshop/.planning/ROADMAP.md`
 - `/Users/kalebnim/Documents/GitHub/syai-claude-workshop/.planning/STATE.md`
 
-**Last session:** 2026-05-09T05:48:15.417Z
-**Stopped at:** Completed 04-01-PLAN.md — slides.md orchestrator + intro/outro chapters
-**Next action:** Execute Phase 04 Plan 02 — hooks chapter (01-hooks.md)
+**Last session:** 2026-05-09T05:49:03Z
+**Stopped at:** Completed 04-04-PLAN.md — Commands/Skills/Plugins chapter (pages/03-commands-skills-plugins.md)
+**Next action:** Execute Phase 04 Plan 05 — build/presenter/PDF verification
 
 ---
 *State initialized: 2026-05-08*
