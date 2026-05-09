@@ -17,11 +17,11 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Deploy
 
-- [ ] **DEPL-01**: Project is connected to Vercel with preview deployments triggered on every push and production deployments on `main`
-- [ ] **DEPL-02**: `vercel.json` includes a SPA rewrite (`/(.*) → /index.html`) so any deep-linked slide URL (e.g. `/14`) loads correctly on hard-refresh
-- [ ] **DEPL-03**: Vercel project explicitly configured with `installCommand: bun install`, `buildCommand: bunx slidev build`, `outputDirectory: dist`
-- [ ] **DEPL-04**: A non-root slide URL (e.g. `<preview>/3`) loads successfully on a fresh browser tab without 404
-- [ ] **DEPL-05**: Production URL is documented in README and accessible publicly
+- [x] **DEPL-01**: Project is connected to Vercel with preview deployments triggered on every push and production deployments on `main`
+- [x] **DEPL-02**: `vercel.json` includes a SPA rewrite (`/(.*) → /index.html`) so any deep-linked slide URL (e.g. `/14`) loads correctly on hard-refresh
+- [x] **DEPL-03**: Vercel project explicitly configured with `installCommand: bun install`, `buildCommand: bunx slidev build`, `outputDirectory: dist`
+- [x] **DEPL-04**: A non-root slide URL (e.g. `<preview>/3`) loads successfully on a fresh browser tab without 404
+- [x] **DEPL-05**: Production URL is documented in README and accessible publicly
 
 ### Theme
 
@@ -105,11 +105,11 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SCAF-03 | Phase 1 | Pending |
 | SCAF-04 | Phase 1 | Pending |
 | SCAF-05 | Phase 1 | Pending |
-| DEPL-01 | Phase 1 | Pending |
-| DEPL-02 | Phase 1 | Pending |
-| DEPL-03 | Phase 1 | Pending |
-| DEPL-04 | Phase 1 | Pending |
-| DEPL-05 | Phase 1 | Pending |
+| DEPL-01 | Phase 1 | Complete |
+| DEPL-02 | Phase 1 | Complete |
+| DEPL-03 | Phase 1 | Complete |
+| DEPL-04 | Phase 1 | Complete |
+| DEPL-05 | Phase 1 | Complete |
 | THEM-01 | Phase 2 | Pending |
 | THEM-02 | Phase 2 | Pending |
 | THEM-03 | Phase 2 | Pending |
