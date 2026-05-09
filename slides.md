@@ -7,6 +7,14 @@ class: text-center
 drawings:
   persist: false
 mdc: true
+colorSchema: dark
+fonts:
+  sans: 'Inter'
+  mono: 'JetBrains Mono'
+highlighter: shiki
+shiki:
+  theme: 'vitesse-dark'
+  langs: ['ts', 'tsx', 'bash', 'json', 'md', 'yaml']
 ---
 
 # syai-claude-workshop
