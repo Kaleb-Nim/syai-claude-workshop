@@ -66,11 +66,12 @@ Participants can follow the workshop live and return to the same URL afterward t
   3. A persistent sidebar/progress indicator renders on every slide via `global-bottom.vue` (or equivalent global layer) using `useNav()`, showing the current slide position.
   4. The sidebar lists section headings; clicking a section jumps to that section's first slide.
   5. The sidebar is visible in audience mode and self-paced mode, and presenter mode (`/presenter/`) opens cleanly with no layout regressions.
-**Plans:** 3 plans
+**Plans:** 4 plans
 **UI hint:** yes
-- [ ] 03-01-PLAN.md — CopyButton.vue + setup/main.ts mount-on-route + scoped .copy-button styles — COMP-01, COMP-02
-- [ ] 03-02-PLAN.md — global-bottom.vue persistent sidebar via useNav() with section-jump nav + scoped .deck-sidebar styles — COMP-03, COMP-04
-- [ ] 03-03-PLAN.md — verification ladder: clean build, preview HTTP smoke, presenter/overview guard, human visual review — COMP-05
+- [x] 02-01-PLAN.md — slides.md headmatter (colorSchema dark, Inter+JetBrains Mono fonts, Shiki vitesse-dark, pinned langs) — THEM-01, THEM-03, THEM-04
+- [ ] 02-02-PLAN.md — uno.config.ts shortcut tokens (bg-main, bg-surface-code, text-main, text-dim, text-accent, border-accent) — THEM-02
+- [ ] 02-03-PLAN.md — style.css with :root variables and .slidev-layout-scoped code-block frame + inline-code pill — THEM-04, THEM-05
+- [ ] 02-04-PLAN.md — verification ladder: build, preview, contrast ≥4.5:1, presenter scoping, Vercel preview review — THEM-04, THEM-05, THEM-06
 
 ### Phase 4: Content Slots, Authoring & Handoff
 **Goal:** The repository is in a state where the workshop instructor can author lesson content using only markdown and the documented authoring guide — never editing Vue, components, or theme files — and a pre-workshop dry-run produces clean presenter mode and a usable PDF.
@@ -97,7 +98,7 @@ Participants can follow the workshop live and return to the same URL afterward t
 |-------|----------------|--------|-----------|
 | 1. Scaffold & Deploy | 2/2 | Complete | 2026-05-09 |
 | 2. Theme & Visual Identity | 4/4 | Complete | 2026-05-09 |
-| 3. Components & Persistent UI | 0/3 | Planned | — |
+| 3. Components & Persistent UI | 0/0 | Not started | — |
 | 4. Content Slots, Authoring & Handoff | 0/0 | Not started | — |
 
 ## Coverage Summary
