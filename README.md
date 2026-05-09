@@ -39,9 +39,44 @@ Serves `dist/` locally with SPA fallback at <http://localhost:4173/>. Use this t
 
 ## Deploy
 
-<!-- Deploy section is finalized in Phase 1 / Plan 02 -->
+The deck is hosted on [Vercel](https://vercel.com) as a static SPA.
 
-_Vercel deployment instructions and the public production URL are added in the deploy plan._
+**Production URL:** https://syai-claude-workshop.vercel.app
+
+### Initial setup
+
+```bash
+# 1. Authenticate the Vercel CLI (one-time)
+bunx vercel login
+
+# 2. Link this repo to a Vercel project
+bunx vercel link --yes
+
+# 3. First production deploy
+bunx vercel deploy --prod
+```
+
+### Auto-deploy on push
+
+Pushes to any branch produce a preview deployment; merges to `main` update production.
+This requires a one-time GitHub connection: open the [Vercel project settings](https://vercel.com/dashboard) → **Settings → Git → Connect Git Repository**, choose this repo, then click **Save**. After connecting, future pushes auto-deploy.
+
+### Manual deploy
+
+```bash
+bunx vercel deploy        # preview
+bunx vercel deploy --prod # production
+```
+
+### Configuration
+
+Build pins live in [`vercel.json`](./vercel.json):
+
+- `framework: null` (Vite SPA, not a Vue/Nuxt preset)
+- `installCommand: "bun install"`
+- `buildCommand: "bunx slidev build"`
+- `outputDirectory: "dist"`
+- SPA rewrite `/(.*) → /index.html` so deep-linked slide URLs (e.g. `/3`) load on hard refresh.
 
 ## Project structure
 
