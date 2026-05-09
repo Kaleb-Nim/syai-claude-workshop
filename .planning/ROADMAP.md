@@ -75,7 +75,12 @@ Participants can follow the workshop live and return to the same URL afterward t
   4. Audience assumption: engineers who've tried Claude Code briefly — comfortable with terminals + LLM chat, haven't pushed past chat. No CC primer needed; no glossary slide required.
   5. Delivery mode: hands-on follow-along. Slides include exact commands, exercise prompts, and "✓ Check:" callouts so participants know they're synced. Live demo cues kept minimal — text density is OK because participants are typing along.
   6. Presenter mode (`/presenter/`) renders cleanly across every chapter with no styling artifacts. `bunx slidev export` produces a readable PDF of the full deck.
-**Plans:** TBD
+**Plans:** 5 plans
+- [ ] 04-01-PLAN.md — slides.md orchestrator + intro/outro chapters (CONT-01, CONT-02)
+- [ ] 04-02-PLAN.md — Hooks chapter `pages/01-hooks.md` (CONT-04)
+- [ ] 04-03-PLAN.md — Subagents & Agent SDK chapter `pages/02-subagents-sdk.md` (CONT-04)
+- [ ] 04-04-PLAN.md — Commands + Skills + Plugins chapter `pages/03-commands-skills-plugins.md` (CONT-04)
+- [ ] 04-05-PLAN.md — verification: build, presenter, PDF export, human visual review (QUAL-01, QUAL-02)
 
 > **Phase 4 scope is content drafting, not authoring infrastructure.** The Phase 4 (old) "instructor authoring guide" outcome — README walkthrough + 5 stock layouts + line-cap conventions — is intentionally deferred. The instructor IS Claude in this codebase; we draft directly. A future Phase 5 can capture the authoring guide once content patterns stabilize.
 
