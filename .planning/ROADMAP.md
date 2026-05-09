@@ -77,7 +77,7 @@ Participants can follow the workshop live and return to the same URL afterward t
   6. Presenter mode (`/presenter/`) renders cleanly across every chapter with no styling artifacts. `bunx slidev export` produces a readable PDF of the full deck.
 **Plans:** 3/5 plans executed
 - [x] 04-01-PLAN.md — slides.md orchestrator + intro/outro chapters (CONT-01, CONT-02) — COMPLETE 2026-05-09
-- [ ] 04-02-PLAN.md — Hooks chapter `pages/01-hooks.md` (CONT-04)
+- [x] 04-02-PLAN.md — Hooks chapter `pages/01-hooks.md` (CONT-04)
 - [x] 04-03-PLAN.md — Subagents & Agent SDK chapter `pages/02-subagents-sdk.md` (CONT-04)
 - [x] 04-04-PLAN.md — Commands + Skills + Plugins chapter `pages/03-commands-skills-plugins.md` (CONT-04)
 - [ ] 04-05-PLAN.md — verification: build, presenter, PDF export, human visual review (QUAL-01, QUAL-02)
