@@ -19,30 +19,28 @@ shiki:
 
 # syai-claude-workshop
 
-advanced Claude Code workshop scaffold
+advanced Claude Code workshop — hooks, subagents, commands
 
 <div class="text-sm opacity-60 mt-8">
-  Phase 1 placeholder — content authored after handoff
+  90 minutes · hands-on · type along
 </div>
 
 ---
-
-# Code blocks work
-
-Shiki highlighting wired and rendering in dev, build, and preview:
-
-```ts
-import { query } from "@anthropic-ai/claude-agent-sdk";
-
-for await (const message of query({ prompt: "ship it" })) {
-  console.log(message);
-}
-```
-
----
-layout: section
+src: ./pages/00-intro.md
 ---
 
-# Deep-linking works
+---
+src: ./pages/01-hooks.md
+---
 
-This is slide `/3` — the SPA-rewrite verification target.
+---
+src: ./pages/02-subagents-sdk.md
+---
+
+---
+src: ./pages/03-commands-skills-plugins.md
+---
+
+---
+src: ./pages/99-outro.md
+---
