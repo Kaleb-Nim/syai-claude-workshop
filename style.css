@@ -1,0 +1,78 @@
+/*
+ * syai-claude-workshop — theme overlay
+ *
+ * Scoping contract (D-14, D-15): every selector below EXCEPT `:root`
+ * MUST have `.slidev-layout` as an ancestor. Presenter chrome
+ * (.slidev-presenter, sidebar thumbnails) MUST NOT inherit these styles.
+ *
+ * Palette (D-01) — mirrored from uno.config.ts shortcuts so that CSS
+ * rules below can use var(--token) without depending on UnoCSS bracket
+ * notation inside selector bodies.
+ */
+
+:root {
+  --bg-main:      #1A1714;
+  --surface-code: #14110E;
+  --text-main:    #F4ECE0;
+  --text-dim:     rgba(244, 236, 224, 0.65);
+  --accent:       #CC785C;
+}
+
+/* Slide canvas — single-tone background per D-02. */
+.slidev-layout {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+}
+
+/* Headings render in cream per D-04 — NOT rust. */
+.slidev-layout h1,
+.slidev-layout h2,
+.slidev-layout h3,
+.slidev-layout h4,
+.slidev-layout h5,
+.slidev-layout h6 {
+  color: var(--text-main);
+}
+
+/*
+ * Code-block frame (D-05):
+ *   - Tinted panel via --surface-code
+ *   - 2px solid rust left rule, full block height
+ *   - SHARP corners — no border-radius (architectural, not card-like)
+ *   - No outer border, no shadow
+ *   - Internal padding 0.9rem 1.1rem
+ *
+ * Selector targets Shiki's <pre class="shiki ..."> wrapper. The
+ * `[class*="shiki"]` matches any Shiki theme variant (e.g., shiki vitesse-dark).
+ */
+.slidev-layout pre[class*="shiki"] {
+  background-color: var(--surface-code) !important;
+  border-left: 2px solid var(--accent);
+  border-radius: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+  box-shadow: none;
+  padding: 0.9rem 1.1rem;
+}
+
+/*
+ * Inline code (D-07):
+ *   - JetBrains Mono inherited from Slidev fonts.mono
+ *   - Subtle pill on --surface-code background
+ *   - NO left rule (inline ≠ block)
+ *
+ * `:not(pre > code)` ensures we only style inline code, not the <code>
+ * inside Shiki's <pre>. The :not(.shiki) guard is belt-and-braces.
+ */
+.slidev-layout :not(pre) > code:not(.shiki) {
+  background-color: var(--surface-code);
+  color: var(--text-main);
+  padding: 0.1em 0.35em;
+  border-radius: 0;
+}
+
+/* Dim text utility — opt-in via class, mirrors UnoCSS text-dim. */
+.slidev-layout .text-dim {
+  color: var(--text-dim);
+}
