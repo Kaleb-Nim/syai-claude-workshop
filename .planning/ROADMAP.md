@@ -64,17 +64,20 @@ Participants can follow the workshop live and return to the same URL afterward t
 **Success Criteria** (preserved): hover-to-copy on code blocks; works in dev + preview; persistent sidebar via `global-bottom.vue` + `useNav()`; section-jump nav; presenter mode unaffected.
 **Plans:** none — deferred.
 
-### Phase 4: Content Slots, Authoring & Handoff
-**Goal:** The repository is in a state where the workshop instructor can author lesson content using only markdown and the documented authoring guide — never editing Vue, components, or theme files — and a pre-workshop dry-run produces clean presenter mode and a usable PDF.
-**Depends on:** Phase 3
-**Requirements:** CONT-01, CONT-02, CONT-03, CONT-04, CONT-05, QUAL-01, QUAL-02, QUAL-03, QUAL-04
+### Phase 4: Workshop Content — Draft
+**Goal:** A teachable 1.5-hour hands-on workshop deck exists in the repository — engineers who've tried Claude Code briefly can follow along to learn three power-user topics (Hooks, Subagents & Agent SDK, Slash Commands + Skills + Plugins) with exact commands, exercise prompts, and checkpoints. Content lives in chapter files under `pages/` and is rendered as slides via `src:` includes in `slides.md`.
+**Depends on:** Phase 2
+**Requirements:** CONT-01, CONT-02, CONT-04 (chapter file structure + `src:` includes), QUAL-01 (presenter mode clean across new content), QUAL-02 (PDF export works on full deck). Deferred to v2: CONT-03, CONT-05 (formal authoring guide), QUAL-03, QUAL-04 (full handoff polish).
 **Success Criteria** (what must be TRUE):
-  1. `slides.md` is a thin orchestrator that includes chapter files via `src:` directives; placeholder files exist in `pages/` for each planned topic (intro, subagents, hooks, MCP, slash commands, skills, plugins, agent SDK, outro) — none contain actual lesson content beyond a level-1 section header demonstrating the convention.
-  2. The README authoring guide (≤150 lines) shows the instructor how to add a slide, add a code block, choose between the 5 stock layouts, follow the 60-char line cap, and respect the magic-move budget rule — and documents the section grouping convention (frontmatter or layout choice).
-  3. Presenter mode (`/presenter/`) renders cleanly across every placeholder slide with no styling artifacts.
-  4. `bunx slidev export` produces a complete, readable PDF of the full deck.
-  5. README documents the pre-workshop dry-run checklist (projector contrast, font size, line length) and the production URL; the repository is verifiably ready for instructor handoff with no Vue or component editing required to author content.
+  1. `slides.md` includes chapter files via `src: ./pages/<chapter>.md` directives (or equivalent); chapter files live under `pages/`.
+  2. Three lesson chapters exist with full draft content suitable for a hands-on workshop: `pages/01-hooks.md`, `pages/02-subagents-sdk.md`, `pages/03-commands-skills-plugins.md`. Each is ~25–30 minutes of teachable material — concept slides + exact commands + 1–2 hands-on exercises per chapter.
+  3. An intro chapter (`pages/00-intro.md`) sets expectations (audience, what we'll cover, what we won't, setup verification step) and an outro chapter (`pages/99-outro.md`) recaps + points to docs.
+  4. Audience assumption: engineers who've tried Claude Code briefly — comfortable with terminals + LLM chat, haven't pushed past chat. No CC primer needed; no glossary slide required.
+  5. Delivery mode: hands-on follow-along. Slides include exact commands, exercise prompts, and "✓ Check:" callouts so participants know they're synced. Live demo cues kept minimal — text density is OK because participants are typing along.
+  6. Presenter mode (`/presenter/`) renders cleanly across every chapter with no styling artifacts. `bunx slidev export` produces a readable PDF of the full deck.
 **Plans:** TBD
+
+> **Phase 4 scope is content drafting, not authoring infrastructure.** The Phase 4 (old) "instructor authoring guide" outcome — README walkthrough + 5 stock layouts + line-cap conventions — is intentionally deferred. The instructor IS Claude in this codebase; we draft directly. A future Phase 5 can capture the authoring guide once content patterns stabilize.
 
 ## Phase Ordering Rationale
 
