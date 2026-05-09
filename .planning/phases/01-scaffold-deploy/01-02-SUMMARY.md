@@ -45,7 +45,7 @@ Vercel project linked, first production deploy executed via `bunx vercel deploy`
 | 2 | vercel link + first preview/production deploy | f127725 |
 | 3 | Verify SPA deep-link (/3 → HTTP 200) + finalize README Deploy section | 1587415 |
 
-**Task 4 (checkpoint:human-verify) — AWAITING USER VERIFICATION**
+**Task 4 (checkpoint:human-verify) — APPROVED by user 2026-05-09**
 
 ## Deployment Details
 
@@ -57,7 +57,18 @@ Vercel project linked, first production deploy executed via `bunx vercel deploy`
 | Build time | ~8s on Vercel (Washington D.C. iad1) |
 | Vercel project | kaleb-nims-projects/syai-claude-workshop |
 
-## Verification Results
+## Human Verification (Task 4) — APPROVED 2026-05-09
+
+User confirmed all four verification steps passed:
+
+1. **Deep-link smoke test (DEPL-04):** Incognito hard-refresh of https://syai-claude-workshop.vercel.app/3 rendered slide 3 correctly — no 404, no blank page.
+2. **Home + slide 2 smoke test:** Home slide loaded; slide 2 (TypeScript code block with Shiki syntax highlighting) verified visible.
+3. **GitHub auto-deploy (DEPL-01):** GitHub repo connected to Vercel (manual dashboard step completed) — auto-deploy confirmed active.
+4. **README sanity check (DEPL-05):** README production URL matches the live URL.
+
+All five DEPL requirements (DEPL-01..DEPL-05) satisfied. Phase 1 complete.
+
+## Automated Verification Results
 
 - `vercel.json` validates against spec: `framework: null`, `installCommand: "bun install"`, `buildCommand: "bunx slidev build"`, `outputDirectory: "dist"`, `rewrites[0].source: "/(.*)"`, `rewrites[0].destination: "/index.html"`
 - `.vercel/project.json` exists locally and is gitignored

@@ -18,7 +18,7 @@ Participants can follow the workshop live and return to the same URL afterward t
 
 ## Phases
 
-- [ ] **Phase 1: Scaffold & Deploy** — Bun-Slidev project initialised and live on Vercel with deep-link routing verified
+- [x] **Phase 1: Scaffold & Deploy** — Bun-Slidev project initialised and live on Vercel with deep-link routing verified — COMPLETE 2026-05-09
 - [ ] **Phase 2: Theme & Visual Identity** — Dark, monospace, Claude-adjacent token system applied without leaking into presenter chrome
 - [ ] **Phase 3: Components & Persistent UI** — Copy-to-clipboard control and persistent sidebar/progress indicator working in dev and built output
 - [ ] **Phase 4: Content Slots, Authoring & Handoff** — Empty chapter scaffolding plus authoring guide and handoff verification (presenter mode, PDF, projector readiness)
@@ -37,7 +37,7 @@ Participants can follow the workshop live and return to the same URL afterward t
   5. README documents setup, dev, build, deploy, and the public production URL; `.gitignore` excludes `node_modules/`, `dist/`, `.vercel/`, and Bun artifacts.
 **Plans:** 2 plans
 - [x] 01.1-bun-slidev-scaffold-PLAN.md — Scaffold Slidev via bun create slidev, pin Bun + Slidev versions, trim to 3-slide placeholder deck, write .gitignore + README skeleton (SCAF-01..05) — COMPLETE 2026-05-09
-- [ ] 01.2-vercel-deploy-PLAN.md — vercel.json with SPA rewrite + Bun build pins, vercel link + first preview/prod deploy, attempt vercel git connect with documented fallback, verify deep-link on /3, finalize README Deploy section (DEPL-01..05)
+- [x] 01.2-vercel-deploy-PLAN.md — vercel.json with SPA rewrite + Bun build pins, vercel link + first preview/prod deploy, attempt vercel git connect with documented fallback, verify deep-link on /3, finalize README Deploy section (DEPL-01..05) — COMPLETE 2026-05-09
 
 ### Phase 2: Theme & Visual Identity
 **Goal:** A reviewer opening the deck immediately reads it as Claude/Anthropic-adjacent (dark, monospace, minimal) with code blocks readable on a projector and zero styling artifacts in presenter mode.
@@ -88,7 +88,7 @@ Participants can follow the workshop live and return to the same URL afterward t
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Scaffold & Deploy | 1/2 | In progress | — |
+| 1. Scaffold & Deploy | 2/2 | Complete | 2026-05-09 |
 | 2. Theme & Visual Identity | 0/0 | Not started | — |
 | 3. Components & Persistent UI | 0/0 | Not started | — |
 | 4. Content Slots, Authoring & Handoff | 0/0 | Not started | — |

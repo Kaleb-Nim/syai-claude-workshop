@@ -27,13 +27,13 @@ progress:
 
 ## Current Position
 
-Phase: 01 (scaffold-deploy) — EXECUTING
-Plan: 2 of 2 (next: 01.2-vercel-deploy)
+Phase: 01 (scaffold-deploy) — COMPLETE
+Plan: 2 of 2 — DONE
 
 - **Milestone:** v1
-- **Phase:** 1 — Scaffold & Deploy
-- **Plan:** 01.1-bun-slidev-scaffold — COMPLETE
-- **Status:** Executing Phase 01 (Plan 01.1 done; Plan 01.2 pending)
+- **Phase:** 1 — Scaffold & Deploy — COMPLETE 2026-05-09
+- **Plan:** 01.2-vercel-deploy — COMPLETE (human verification approved 2026-05-09)
+- **Status:** Phase 01 complete; ready for Phase 02 (Theme & Visual Identity)
 - **Progress:** [██████████] 100%
 
 ## Performance Metrics
@@ -62,6 +62,8 @@ Plan: 2 of 2 (next: 01.2-vercel-deploy)
 | Multi-file deck (`pages/*.md` via `src:`) from day one | research/ARCHITECTURE.md | Avoids monolithic `slides.md`; instructor authors one chapter at a time. |
 | No custom `vite.config.ts` for v1 | research/PITFALLS.md (#2043) | Sidesteps Bun + Slidev type-resolution edge case. |
 | `vercel.json` SPA rewrite mandatory in Phase 1 | research/PITFALLS.md (#1) | Direct slide-URL 404s would break the takeaway promise. |
+| GitHub→Vercel auto-deploy wired via dashboard (not CLI) | 01.2 Task 4 | `vercel git connect` failed (no remote configured); user completed manual dashboard link — DEPL-01 satisfied. |
+| DEPL-04 verified on production URL not preview | 01.2 Task 3 | Vercel deployment protection blocks curl on preview URLs (HTTP 401); production URL is public and equivalent. |
 
 ### Open Questions / TODOs
 
@@ -90,8 +92,9 @@ None.
 - `/Users/kalebnim/Documents/GitHub/syai-claude-workshop/.planning/ROADMAP.md`
 - `/Users/kalebnim/Documents/GitHub/syai-claude-workshop/.planning/STATE.md`
 
-**Last session:** 2026-05-09T00:22:23.904Z
-**Next action:** Execute plan 01.2-vercel-deploy to wire Vercel hosting and verify SPA rewrite on live URL.
+**Last session:** 2026-05-09
+**Stopped at:** Plan 01.2 Task 4 — human-verify checkpoint approved
+**Next action:** Begin Phase 02 (Theme & Visual Identity) — run `/gsd-execute-phase 02`
 
 ---
 *State initialized: 2026-05-08*
