@@ -56,22 +56,13 @@ Participants can follow the workshop live and return to the same URL afterward t
 - [x] 02-03-PLAN.md — style.css with :root variables and .slidev-layout-scoped code-block frame + inline-code pill — THEM-04, THEM-05 — COMPLETE 2026-05-09
 - [x] 02-04-PLAN.md — verification ladder: build, preview, contrast ≥4.5:1, presenter scoping, Vercel preview review — THEM-04, THEM-05, THEM-06 — COMPLETE 2026-05-09
 
-### Phase 3: Components & Persistent UI
-**Goal:** Participants in both live and self-paced modes can copy any code block in one click and always see where they are in the deck via a persistent navigation/progress indicator that does not break presenter mode.
+### Phase 3: Components & Persistent UI — **DEFERRED (2026-05-09)**
+**Status:** Deferred. Chrome polish (copy button, persistent sidebar) is not the workshop's critical path — content + engagement is. Revisit only if friction surfaces during dry-run.
+**Goal (preserved for future revival):** Participants in both live and self-paced modes can copy any code block in one click and always see where they are in the deck via a persistent navigation/progress indicator that does not break presenter mode.
 **Depends on:** Phase 2
-**Requirements:** COMP-01, COMP-02, COMP-03, COMP-04, COMP-05
-**Success Criteria** (what must be TRUE):
-  1. Hovering or clicking a code block surfaces a copy-to-clipboard control; clicking it copies the unhighlighted source and the control shows transient confirmation that recovers within ~2s.
-  2. The copy button works identically in `bunx slidev` dev mode AND in `bun run preview` of the built `dist/` output (no dev-only behaviour).
-  3. A persistent sidebar/progress indicator renders on every slide via `global-bottom.vue` (or equivalent global layer) using `useNav()`, showing the current slide position.
-  4. The sidebar lists section headings; clicking a section jumps to that section's first slide.
-  5. The sidebar is visible in audience mode and self-paced mode, and presenter mode (`/presenter/`) opens cleanly with no layout regressions.
-**Plans:** 4 plans
-**UI hint:** yes
-- [x] 02-01-PLAN.md — slides.md headmatter (colorSchema dark, Inter+JetBrains Mono fonts, Shiki vitesse-dark, pinned langs) — THEM-01, THEM-03, THEM-04
-- [ ] 02-02-PLAN.md — uno.config.ts shortcut tokens (bg-main, bg-surface-code, text-main, text-dim, text-accent, border-accent) — THEM-02
-- [ ] 02-03-PLAN.md — style.css with :root variables and .slidev-layout-scoped code-block frame + inline-code pill — THEM-04, THEM-05
-- [ ] 02-04-PLAN.md — verification ladder: build, preview, contrast ≥4.5:1, presenter scoping, Vercel preview review — THEM-04, THEM-05, THEM-06
+**Requirements:** COMP-01, COMP-02, COMP-03, COMP-04, COMP-05 — deferred to v2.
+**Success Criteria** (preserved): hover-to-copy on code blocks; works in dev + preview; persistent sidebar via `global-bottom.vue` + `useNav()`; section-jump nav; presenter mode unaffected.
+**Plans:** none — deferred.
 
 ### Phase 4: Content Slots, Authoring & Handoff
 **Goal:** The repository is in a state where the workshop instructor can author lesson content using only markdown and the documented authoring guide — never editing Vue, components, or theme files — and a pre-workshop dry-run produces clean presenter mode and a usable PDF.
