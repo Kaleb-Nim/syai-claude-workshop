@@ -76,7 +76,7 @@ Participants can follow the workshop live and return to the same URL afterward t
   5. Delivery mode: hands-on follow-along. Slides include exact commands, exercise prompts, and "✓ Check:" callouts so participants know they're synced. Live demo cues kept minimal — text density is OK because participants are typing along.
   6. Presenter mode (`/presenter/`) renders cleanly across every chapter with no styling artifacts. `bunx slidev export` produces a readable PDF of the full deck.
 **Plans:** 5 plans
-- [ ] 04-01-PLAN.md — slides.md orchestrator + intro/outro chapters (CONT-01, CONT-02)
+- [x] 04-01-PLAN.md — slides.md orchestrator + intro/outro chapters (CONT-01, CONT-02) — COMPLETE 2026-05-09
 - [ ] 04-02-PLAN.md — Hooks chapter `pages/01-hooks.md` (CONT-04)
 - [ ] 04-03-PLAN.md — Subagents & Agent SDK chapter `pages/02-subagents-sdk.md` (CONT-04)
 - [ ] 04-04-PLAN.md — Commands + Skills + Plugins chapter `pages/03-commands-skills-plugins.md` (CONT-04)
@@ -98,7 +98,7 @@ Participants can follow the workshop live and return to the same URL afterward t
 | 1. Scaffold & Deploy | 2/2 | Complete | 2026-05-09 |
 | 2. Theme & Visual Identity | 4/4 | Complete | 2026-05-09 |
 | 3. Components & Persistent UI | 0/0 | Not started | — |
-| 4. Content Slots, Authoring & Handoff | 0/0 | Not started | — |
+| 4. Workshop Content — Draft | 1/5 | Executing | — |
 
 ## Coverage Summary
 
