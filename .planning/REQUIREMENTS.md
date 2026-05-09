@@ -45,7 +45,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **CONT-01**: `slides.md` is a thin orchestrator that includes chapter files via `src:` directives — instructor never edits a single 5,000-line file
 - [x] **CONT-02**: `pages/` directory contains placeholder chapter files for the planned workshop topics: intro, subagents, hooks, MCP, slash commands, skills, plugins, agent SDK, outro
 - [ ] **CONT-03**: Each placeholder includes a level-1 section header slide demonstrating the section convention so the instructor sees the expected pattern
-- [ ] **CONT-04**: Section grouping convention (frontmatter or layout choice) is documented in the authoring guide
+- [x] **CONT-04**: Section grouping convention (frontmatter or layout choice) is documented in the authoring guide
 - [ ] **CONT-05**: Authoring guide in README (≤150 lines) shows: how to add a slide, how to add a code block, the 5 stock layouts to use, the 60-char-per-line rule, and the magic-move budget rule
 
 ### Quality & Handoff
@@ -124,7 +124,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CONT-01 | Phase 4 | Complete — 04-01 |
 | CONT-02 | Phase 4 | Complete — 04-01 |
 | CONT-03 | Phase 4 | Pending |
-| CONT-04 | Phase 4 | Pending |
+| CONT-04 | Phase 4 | Complete |
 | CONT-05 | Phase 4 | Pending |
 | QUAL-01 | Phase 4 | Pending |
 | QUAL-02 | Phase 4 | Pending |
