@@ -30,3 +30,16 @@ my-app/
 ```
 
 We'll teach the **bold 3**: `settings.json`, `skills/`, `agents/`.
+
+<style scoped>
+pre, code {
+  font-size: 0.7rem !important;
+  line-height: 1.15 !important;
+}
+.slidev-code {
+  padding: 0.6em 0.9em !important;
+}
+h1 {
+  margin-bottom: 0.4em !important;
+}
+</style>
