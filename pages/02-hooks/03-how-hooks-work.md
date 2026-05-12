@@ -7,41 +7,76 @@ Two events do most of the work:
 
 You wire them in `~/.claude/settings.json`:
 
+<div class="grid grid-cols-3 gap-3 mt-2">
+
+<div>
+
+**macOS**
+
 ```json
 {
   "hooks": {
     "Stop": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "afplay /System/Library/Sounds/Glass.aiff"
-          }
-        ]
-      }
+      { "hooks": [{ "type": "command",
+        "command": "afplay /System/Library/Sounds/Glass.aiff" }] }
     ]
   }
 }
 ```
 
-<div class="text-dim text-sm mt-4">
+</div>
 
-- Linux / WSL → swap `afplay` for `aplay /usr/share/sounds/alsa/Front_Center.wav`
-- Native Windows → easiest path today is to run Claude Code inside WSL so `afplay`/`aplay` and shell paths work
+<div>
+
+**Linux / WSL**
+
+```json
+{
+  "hooks": {
+    "Stop": [
+      { "hooks": [{ "type": "command",
+        "command": "aplay /usr/share/sounds/alsa/Front_Center.wav" }] }
+    ]
+  }
+}
+```
+
+</div>
+
+<div>
+
+**Windows**
+
+```json
+{
+  "hooks": {
+    "Stop": [
+      { "hooks": [{ "type": "command",
+        "command": "powershell -c \"(New-Object Media.SoundPlayer 'C:\\Windows\\Media\\notify.wav').PlaySync()\"" }] }
+    ]
+  }
+}
+```
+
+</div>
 
 </div>
 
 <div class="text-dim text-xs mt-4">
+  Native Windows works; if PowerShell quoting fights you, run Claude Code inside WSL and use the Linux command.
+</div>
+
+<div class="text-dim text-xs mt-2">
   more exist: <code>PreToolUse</code>, <code>PostToolUse</code>, <code>UserPromptSubmit</code>, <code>SessionStart</code> — same shape
 </div>
 
 <style scoped>
 pre, code {
-  font-size: 0.7rem !important;
+  font-size: 0.55rem !important;
   line-height: 1.15 !important;
 }
 .slidev-code {
-  padding: 0.6em 0.9em !important;
+  padding: 0.4em 0.6em !important;
 }
 h1 {
   margin-bottom: 0.4em !important;

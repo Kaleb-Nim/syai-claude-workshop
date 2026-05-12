@@ -198,3 +198,19 @@ Phase 2 ends when:
 
 *Phase: 02-hooks*
 *Context gathered: 2026-05-12 via /gsd-discuss-phase*
+
+## Post-execution amendments
+
+- **D-06 / D-08 superseded (2026-05-13, user-authorized):** Cross-OS guidance
+  is now rendered as three side-by-side per-OS code blocks
+  (macOS · Linux/WSL · Windows PowerShell) inside `<div class="grid grid-cols-3">`
+  instead of a single macOS block + dim prose footnote. Reason: Linux and Windows
+  participants could not paste verbatim from a macOS-only block. Files affected:
+  `pages/02-hooks/03-how-hooks-work.md`, `pages/02-hooks/04-hands-on-build.md`.
+  Font-shrink tightened to `0.55rem` to fit three columns.
+- **New section 04b added (2026-05-13, user-authorized):**
+  `pages/02-hooks/04b-or-just-ask.md` demonstrates the natural-language
+  alternative — telling Claude Code to edit `~/.claude/settings.json` itself.
+  Foreshadows the "Claude edits its own config" thread in Chapters 3 and 4.
+  Wired into orchestrator `pages/02-hooks.md` between 04 and 05. Chapter 2
+  grows from 5 to 6 sections; deck slide count 19 → 20.
