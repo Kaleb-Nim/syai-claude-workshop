@@ -56,7 +56,7 @@
 - [x] 02-02-PLAN.md — section 02 why-hooks (IFTTT framing + 3 locked determinism quotes, HOOK-01)
 - [x] 02-03-PLAN.md — section 03 how-hooks-work (Stop + Notification + minimal settings.json JSON, HOOK-02)
 - [x] 02-04-PLAN.md — section 04 hands-on-build (full Stop+Notification paste-target JSON, HOOK-03 wire)
-- [ ] 02-05-PLAN.md — section 05 hands-on-fire (trigger both events + two ✓ Checks, HOOK-03 fire)
+- [x] 02-05-PLAN.md — section 05 hands-on-fire (trigger both events + two ✓ Checks, HOOK-03 fire)
 - [ ] 02-06-PLAN.md — bunx slidev build + presenter spot-check (QUAL-01)
 
 ### Phase 3: Skills
