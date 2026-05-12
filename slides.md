@@ -24,3 +24,7 @@ advanced Claude Code workshop
 <div class="text-sm opacity-60 mt-8">
   workshop content for v1.1 will be authored as <code>pages/*.md</code> chapters and re-linked via <code>src:</code> includes here
 </div>
+
+---
+src: ./pages/01-audience-setup.md
+---
