@@ -4,52 +4,50 @@
 **Milestone:** v1.1 workshop-content-v2
 **Core Value:** Participants can follow the workshop live and return to the same URL afterward to step through the material at their own pace — without losing place, formatting, or copyable code.
 
-**Authoring approach:** Iterative section-by-section loop — each section is its own GSD plan; review checkpoint between sections instead of a milestone-end aborted-prone verification phase.
+**Authoring approach:** Iterative section-by-section loop — each section is its own GSD plan; review checkpoint between sections.
 
-**Locked from v1.0** (not re-derived here): Slidev `^52.15` on Bun, Vercel auto-deploy, D-01 warm near-black palette + rust accent, JetBrains Mono + Inter fonts, `.slidev-layout` CSS scoping, `slides.md` `src:` orchestrator pattern, `global-top.vue` progress bar.
+**Locked from v1.0** (not re-derived): Slidev `^52.15` on Bun, Vercel auto-deploy, D-01 warm near-black palette + rust accent, JetBrains Mono + Inter fonts, `.slidev-layout` CSS scoping, `slides.md` `src:` orchestrator pattern, `global-top.vue` progress bar.
+
+**Research policy:** Each chapter phase begins with a researcher spawn during `/gsd-plan-phase N`. The researcher surveys top articles + official docs for the primitive being taught, and the per-section plans inside that phase derive their specific worked examples, exercise scaffolds, and detailed success criteria from research findings. The requirements below are intentionally generic — they fix the shape of every chapter (concept + mechanism + hands-on) without locking in specifics that should be informed by current best practice.
 
 ## v1 Requirements
 
 ### Audience + Setup chapter (`pages/01-audience-setup.md`)
 
-- [ ] **AUD-01**: A "Who is this workshop for" opening establishes the target participant — engineers comfortable with Git, terminals, and chat-mode LLMs but who haven't pushed past chat into Claude Code's deeper primitives
-- [ ] **AUD-02**: A "What we'll cover / what we won't" slide explicitly names the 4 topic chapters (Hooks, Skills, Subagents, SDK) and explicitly excludes slash commands and plugins for v1.1
-- [ ] **SET-01**: Section walks participants through `/statusline` as the smallest possible "make Claude work for you" win — exact command, expected visible change, ✓ Check callout
-- [ ] **SET-02**: Section walks participants through editing `CLAUDE.md` — what it does, where it lives, one concrete edit that demonstrates immediate behavioral change in the next Claude turn
-- [ ] **SET-03**: Section closes with a recap and a sync-check ("everyone has a working `/statusline` and an edited `CLAUDE.md`") so the room is aligned before Chapter 2
+- [ ] **AUD-01**: Chapter establishes who this workshop is for — target participant profile (engineers comfortable with Git, terminals, and chat-mode LLMs but haven't pushed past chat into Claude Code's deeper primitives)
+- [ ] **AUD-02**: Chapter establishes what's covered (4 topic chapters: Hooks, Skills, Subagents, SDK) and what's explicitly excluded (slash commands, plugins) so participants align before the deep chapters
+- [ ] **SET-01**: Chapter delivers at least two small immediate Claude wins so participants leave Chapter 1 with Claude already working better for them than when they walked in. Specific wins selected during `/gsd-plan-phase 1` research; user-suggested seeds: `/statusline`, editing `CLAUDE.md`
+- [ ] **SET-02**: Chapter ends with a sync-check / hands-on confirming the room is aligned before Chapter 2 starts
 
 ### Hooks chapter (`pages/02-hooks.md`)
 
-- [ ] **HOOK-01**: Section explains what Claude Code hooks fire on (PreToolUse, PostToolUse, etc.) with a concrete example of one hook event with input/output JSON shape
-- [ ] **HOOK-02**: Section walks through `settings.json` hook wiring — exact JSON, where the file lives, how a hook is registered
-- [ ] **HOOK-03**: Section builds one practical defensive hook live (e.g. PreToolUse rejecting `rm -rf` or env-file reads) with BEFORE/AFTER demonstration
-- [ ] **HOOK-04**: Section gives participants one hands-on exercise (write a PostToolUse logger or similar) with copy-paste-precise commands
+- [ ] **HOOK-01**: Chapter frames why hooks exist — what problem they solve, what becomes possible because of them
+- [ ] **HOOK-02**: Chapter teaches how hooks work mechanically — relevant lifecycle events + `settings.json` wiring with one concrete JSON shape. Specific events emphasised selected during `/gsd-plan-phase 2` research
+- [ ] **HOOK-03**: Chapter includes one small live hands-on task that participants build alongside the presenter. Specific worked example derived during `/gsd-plan-phase 2` research; user-suggested seed: sound-notification hook on `Stop` and `Notification` events (`afplay` macOS / `aplay` Linux)
 
 ### Skills chapter (`pages/03-skills.md`)
 
-- [ ] **SKL-01**: Section explains what a skill is — `.claude/skills/<name>/SKILL.md` file shape, where it lives, how Claude discovers it
-- [ ] **SKL-02**: Section explains progressive disclosure — why skills load lazily, how the SKILL.md frontmatter (`description` field) drives matching
-- [ ] **SKL-03**: Section walks through one worked-example skill built live (e.g. a domain-specific lookup) so participants see the full create → use loop
-- [ ] **SKL-04**: Section gives participants one hands-on exercise (write a personal skill) with copy-paste-precise scaffolding
+- [ ] **SKL-01**: Chapter explains what a skill is — `.claude/skills/<name>/SKILL.md` file shape, where it lives, how Claude discovers it
+- [ ] **SKL-02**: Chapter teaches the mental model — progressive disclosure, why skills load lazily, what role frontmatter plays in matching
+- [ ] **SKL-03**: Chapter includes one small live hands-on task. Specific worked example derived during `/gsd-plan-phase 3` research
 
 ### Subagents + Agent SDK chapter (`pages/04-subagents-sdk.md`)
 
-- [ ] **SUB-01**: Section explains subagents in Claude Code — the Task tool, `.claude/agents/<name>.md` file shape, user-invoked vs Claude-invoked distinction
-- [ ] **SUB-02**: Section walks through one worked-example subagent built live (e.g. code-reviewer or research-agent)
-- [ ] **SUB-03**: Section bridges to the programmatic Agent SDK — same primitive, ≤15-line `@anthropic-ai/claude-agent-sdk` snippet showing equivalent functionality outside the CLI
-- [ ] **SUB-04**: Section gives participants one hands-on exercise (invoke a subagent OR call the SDK programmatically) with copy-paste-precise scaffolding
+- [ ] **SUB-01**: Chapter explains subagents in Claude Code — Task tool, `.claude/agents/<name>.md` file shape, user-invoked vs Claude-invoked distinction
+- [ ] **SUB-02**: Chapter bridges to the programmatic Agent SDK — same primitive outside the CLI in a short snippet
+- [ ] **SUB-03**: Chapter includes one small live hands-on task. Specific worked example derived during `/gsd-plan-phase 4` research
 
 ### Outro chapter (`pages/99-outro.md`)
 
-- [ ] **OUT-01**: Recap slide naming the 4 topic chapters and their one-line takeaway each
-- [ ] **OUT-02**: "Where to next" slide pointing to Anthropic docs, the workshop GitHub repo, and 2-3 community resources
-- [ ] **OUT-03**: Closing slide with the production deck URL so participants can return to it after the workshop
+- [ ] **OUT-01**: Recap slide naming the 4 topic chapters with one-line takeaways
+- [ ] **OUT-02**: "Where to next" slide pointing to Anthropic docs, the workshop GitHub repo, and a small number of community resources (count + selection during `/gsd-plan-phase 5` research)
+- [ ] **OUT-03**: Closing slide with the production deck URL
 
 ### Authoring workflow quality gates
 
-- [ ] **QUAL-01**: Each chapter phase ends with a lightweight build + presenter spot-check — `bunx slidev build` exits 0, the new chapter renders in presenter mode without styling artifacts, before the next chapter phase starts
-- [ ] **QUAL-02**: Each section within a chapter is committed atomically with a section-scoped commit message before the next section starts
-- [ ] **QUAL-03**: Milestone-end full-deck PDF export via `bunx slidev export` produces a readable PDF (>50KB, all chapters present in order)
+- [ ] **QUAL-01**: Each chapter phase ends with a lightweight build + presenter spot-check — `bunx slidev build` exits 0, the chapter renders clean in presenter mode, before the next chapter phase starts
+- [ ] **QUAL-02**: Each section within a chapter is committed atomically with a section-scoped commit message
+- [ ] **QUAL-03**: Milestone-end full-deck PDF export via `bunx slidev export` produces a readable PDF (>50KB, all 5 chapters present in order)
 - [ ] **QUAL-04**: All chapter content respects the locked v1.0 tone constraints — confident, terse, no hype prose, no exclamation marks in body, no screenshots (code/terminal blocks only)
 
 ## Future Requirements
@@ -75,28 +73,45 @@ Deferred to v1.2+ or beyond.
 
 ## Out of Scope (v1.1)
 
-Explicitly excluded for this milestone.
-
 | Feature | Reason |
 |---------|--------|
-| Slash commands chapter | Dropped from workshop scope v1.1 — didn't earn its slot. Slash commands still exist as a Claude Code primitive but are not workshop teaching material. |
+| Slash commands chapter | Dropped from workshop scope v1.1 — didn't earn its slot. Slash commands still exist as a primitive but are not workshop teaching material. |
 | Plugins chapter | Dropped from workshop scope v1.1 — same reasoning. |
 | Copy-to-clipboard button on code blocks | Carried over from v1.0's deferred COMP-01..02. Revive only if dry-run friction surfaces. |
 | Persistent sidebar with section nav | Carried over from v1.0's deferred COMP-03..05. `global-top.vue` progress bar is sufficient. |
 | README authoring guide | The instructor IS Claude in this codebase; no separate human-targeted authoring guide is needed for v1.1. |
 | Per-chapter PDF export gates | PDF export gated only at milestone end (QUAL-03), not per chapter. |
-| Pre-commit build hooks | Considered and rejected — lightweight per-chapter build gate (QUAL-01) is sufficient. |
-| MCP chapter | Out of scope — covered in a future milestone if demand surfaces. |
+| Pre-commit build hooks | Lightweight per-chapter build gate (QUAL-01) is sufficient. |
+| MCP chapter | Out of scope — future milestone if demand surfaces. |
 | Hooks + skills + subagents inter-composition examples | Each chapter teaches its primitive in isolation; cross-primitive recipes are a v1.2+ concern. |
-| Live-coding extended demos beyond the one hands-on exercise per chapter | Each chapter is bounded by its 1 worked-example slide and 1 participant exercise; longer demos belong to a separate "deep dive" milestone if ever. |
+| Live-coding extended demos beyond the one hands-on task per chapter | Each chapter is bounded by its single hands-on task; longer demos belong to a separate "deep dive" milestone if ever. |
 
 ## Traceability
 
-Phase mapping will be filled by the roadmapper.
+17 requirements across 5 chapter phases + 4 cross-cutting quality requirements. Specifics for each chapter's worked example, lifecycle events emphasised, and detailed success criteria are derived per-phase via researcher spawn during `/gsd-plan-phase N`.
 
-| Phase | Requirements |
-|-------|--------------|
-| TBD | TBD |
+| Requirement | Phase | Notes |
+|-------------|-------|-------|
+| AUD-01 | Phase 1: Audience + Setup | — |
+| AUD-02 | Phase 1: Audience + Setup | — |
+| SET-01 | Phase 1: Audience + Setup | Specifics from research (hint: /statusline, CLAUDE.md edit) |
+| SET-02 | Phase 1: Audience + Setup | — |
+| HOOK-01 | Phase 2: Hooks | — |
+| HOOK-02 | Phase 2: Hooks | Specifics (events emphasised) from research |
+| HOOK-03 | Phase 2: Hooks | Specifics from research (hint: sound-notification on Stop/Notification) |
+| SKL-01 | Phase 3: Skills | — |
+| SKL-02 | Phase 3: Skills | — |
+| SKL-03 | Phase 3: Skills | Specifics from research |
+| SUB-01 | Phase 4: Subagents + Agent SDK | — |
+| SUB-02 | Phase 4: Subagents + Agent SDK | — |
+| SUB-03 | Phase 4: Subagents + Agent SDK | Specifics from research |
+| OUT-01 | Phase 5: Outro + Milestone Gate | — |
+| OUT-02 | Phase 5: Outro + Milestone Gate | — |
+| OUT-03 | Phase 5: Outro + Milestone Gate | — |
+| QUAL-01 | All phases | Final plan in each chapter phase |
+| QUAL-02 | All phases | Discipline — atomic section commits |
+| QUAL-03 | Phase 5 | Milestone-end PDF gate |
+| QUAL-04 | All phases | Discipline — tone constraints |
 
 ---
-*Requirements defined 2026-05-12 for milestone v1.1.*
+*Requirements defined 2026-05-12 for milestone v1.1. Generic-by-design — per-chapter specifics derived via research during /gsd-plan-phase.*

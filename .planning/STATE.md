@@ -3,10 +3,10 @@ gsd_state_version: 1.0
 milestone: v1.1
 milestone_name: workshop-content-v2
 status: planning
-last_updated: "2026-05-12T08:14:15.982Z"
+last_updated: "2026-05-12T09:00:00.000Z"
 last_activity: 2026-05-12
 progress:
-  total_phases: 0
+  total_phases: 5
   completed_phases: 0
   total_plans: 0
   completed_plans: 0
@@ -24,14 +24,14 @@ See: `.planning/PROJECT.md` (updated 2026-05-12 after v1.0 close)
 
 **Core value:** Participants can follow the workshop live and return to the same URL afterward to step through the material at their own pace — without losing place, formatting, or copyable code.
 
-**Current focus:** Planning next milestone — run `/gsd-new-milestone` to define v1.1.
+**Current focus:** v1.1 roadmap defined. Next action: `/gsd-plan-phase 1` to plan Phase 1 (Audience + Setup) section-by-section.
 
 ## Current Position
 
-Phase: Not started (defining requirements)
+Phase: 1 — Audience + Setup (upcoming)
 Plan: —
-Status: Defining requirements
-Last activity: 2026-05-12 — Milestone v1.1 started
+Status: Roadmap defined; awaiting `/gsd-plan-phase 1`
+Last activity: 2026-05-12 — v1.1 roadmap created (5 phases, 22/22 requirements mapped)
 
 ## Deferred Items
 
@@ -61,11 +61,11 @@ See `.planning/PROJECT.md` `## Key Decisions` for the full table with outcomes. 
 - Visual identity locked: D-01 warm near-black palette with rust accent, JetBrains Mono + Inter, vitesse-dark Shiki, all CSS scoped under `.slidev-layout`.
 - Architecture locked: `slides.md` is a thin orchestrator; chapters live in `pages/*.md` and are pulled in via `src:` includes.
 - `global-top.vue` carries forward as the persistent progress indicator.
+- v1.1 authoring is section-by-section — each section is its own plan, atomic commit per section (QUAL-02), build + presenter spot-check at chapter close (QUAL-01).
 
 ### Open Questions / TODOs
 
-- v1.1 must define what "fine-grained per-section control" means concretely — this drives the chapter authoring approach.
-- Phase 3 (Copy button + persistent sidebar) deferred — revive only if dry-run friction surfaces.
+- Phase 3 (Copy button + persistent sidebar) deferred — revive only if dry-run friction surfaces during v1.1 dry-run.
 
 ### Blockers
 
@@ -74,8 +74,8 @@ None.
 ## Session Continuity
 
 **Last session:** 2026-05-12
-**Stopped at:** v1.0 milestone closed; PROJECT/ROADMAP/STATE/MILESTONES updated; awaiting `/gsd-new-milestone` to start v1.1.
-**Next action:** `/gsd-new-milestone` — questioning → requirements → roadmap.
+**Stopped at:** v1.1 roadmap created — 5 phases (Audience+Setup, Hooks, Skills, Subagents+SDK, Outro+Gate), 22/22 requirements mapped.
+**Next action:** `/gsd-plan-phase 1` — decompose Phase 1 into section plans (one plan per section, plus a QUAL-01 verification plan).
 
 ---
-*State updated: 2026-05-12 after v1.0 milestone close*
+*State updated: 2026-05-12 after v1.1 roadmap creation*
