@@ -52,7 +52,7 @@
 **Requirements**: HOOK-01, HOOK-02, HOOK-03
 **Success Criteria**: Derived during `/gsd-plan-phase 2` after research. Generic shape: why-it-exists framing + how-it-works (lifecycle events + `settings.json` wiring) + one small live hands-on task. User-suggested seed for the hands-on: sound-notification hook on `Stop` and `Notification` events (`afplay` macOS / `aplay` Linux).
 **Plans:** 6 plans
-- [ ] 02-01-PLAN.md — scaffolding (slides.md include + pages/02-hooks.md orchestrator + section 01 cover)
+- [x] 02-01-PLAN.md — scaffolding (slides.md include + pages/02-hooks.md orchestrator + section 01 cover)
 - [ ] 02-02-PLAN.md — section 02 why-hooks (IFTTT framing + 3 locked determinism quotes, HOOK-01)
 - [ ] 02-03-PLAN.md — section 03 how-hooks-work (Stop + Notification + minimal settings.json JSON, HOOK-02)
 - [ ] 02-04-PLAN.md — section 04 hands-on-build (full Stop+Notification paste-target JSON, HOOK-03 wire)

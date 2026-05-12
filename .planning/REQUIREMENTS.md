@@ -21,9 +21,9 @@
 
 ### Hooks chapter (`pages/02-hooks.md`)
 
-- [ ] **HOOK-01**: Chapter frames why hooks exist — what problem they solve, what becomes possible because of them
-- [ ] **HOOK-02**: Chapter teaches how hooks work mechanically — relevant lifecycle events + `settings.json` wiring with one concrete JSON shape. Specific events emphasised selected during `/gsd-plan-phase 2` research
-- [ ] **HOOK-03**: Chapter includes one small live hands-on task that participants build alongside the presenter. Specific worked example derived during `/gsd-plan-phase 2` research; user-suggested seed: sound-notification hook on `Stop` and `Notification` events (`afplay` macOS / `aplay` Linux)
+- [x] **HOOK-01**: Chapter frames why hooks exist — what problem they solve, what becomes possible because of them
+- [x] **HOOK-02**: Chapter teaches how hooks work mechanically — relevant lifecycle events + `settings.json` wiring with one concrete JSON shape. Specific events emphasised selected during `/gsd-plan-phase 2` research
+- [x] **HOOK-03**: Chapter includes one small live hands-on task that participants build alongside the presenter. Specific worked example derived during `/gsd-plan-phase 2` research; user-suggested seed: sound-notification hook on `Stop` and `Notification` events (`afplay` macOS / `aplay` Linux)
 
 ### Skills chapter (`pages/03-skills.md`)
 
@@ -46,9 +46,9 @@
 ### Authoring workflow quality gates
 
 - [ ] **QUAL-01**: Each chapter phase ends with a lightweight build + presenter spot-check — `bunx slidev build` exits 0, the chapter renders clean in presenter mode, before the next chapter phase starts
-- [ ] **QUAL-02**: Each section within a chapter is committed atomically with a section-scoped commit message
+- [x] **QUAL-02**: Each section within a chapter is committed atomically with a section-scoped commit message
 - [ ] **QUAL-03**: Milestone-end full-deck PDF export via `bunx slidev export` produces a readable PDF (>50KB, all 5 chapters present in order)
-- [ ] **QUAL-04**: All chapter content respects the locked v1.0 tone constraints — confident, terse, no hype prose, no exclamation marks in body, no screenshots (code/terminal blocks only)
+- [x] **QUAL-04**: All chapter content respects the locked v1.0 tone constraints — confident, terse, no hype prose, no exclamation marks in body, no screenshots (code/terminal blocks only)
 
 ## Future Requirements
 

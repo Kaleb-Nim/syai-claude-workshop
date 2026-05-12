@@ -4,14 +4,14 @@ milestone: v1.1
 milestone_name: workshop-content-v2
 status: executing
 stopped_at: Phase 3 context gathered
-last_updated: "2026-05-12T13:22:26.985Z"
-last_activity: 2026-05-12 -- Phase 02 planning complete
+last_updated: "2026-05-12T13:25:27.397Z"
+last_activity: 2026-05-12
 progress:
   total_phases: 5
   completed_phases: 1
   total_plans: 14
-  completed_plans: 8
-  percent: 57
+  completed_plans: 9
+  percent: 64
 ---
 
 # Project State: syai-claude-workshop
@@ -25,14 +25,14 @@ See: `.planning/PROJECT.md` (updated 2026-05-12 after v1.0 close)
 
 **Core value:** Participants can follow the workshop live and return to the same URL afterward to step through the material at their own pace — without losing place, formatting, or copyable code.
 
-**Current focus:** Phase 01 complete. Next: `/gsd-plan-phase 2` (Hooks).
+**Current focus:** Phase 02 — hooks
 
 ## Current Position
 
-Phase: 01 (audience-setup) — ✅ COMPLETE
-Plan: 8 of 8
+Phase: 02 (hooks) — EXECUTING
+Plan: 2 of 6
 Status: Ready to execute
-Last activity: 2026-05-12 -- Phase 02 planning complete
+Last activity: 2026-05-12
 
 ## Deferred Items
 
@@ -75,7 +75,7 @@ None.
 
 ## Session Continuity
 
-**Last session:** 2026-05-12T13:22:26.981Z
+**Last session:** 2026-05-12T13:25:23.429Z
 **Stopped at:** Phase 3 context gathered
 **Next action:** `/gsd-plan-phase 1` — decompose Phase 1 into section plans (one plan per section, plus a QUAL-01 verification plan).
 
