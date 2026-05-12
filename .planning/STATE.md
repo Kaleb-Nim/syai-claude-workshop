@@ -1,64 +1,46 @@
 ---
 gsd_state_version: 1.0
-milestone: v1.0
-milestone_name: milestone
-status: executing
-stopped_at: Completed quick task e98-top-progress-bar — global-top.vue progress bar
-last_updated: "2026-05-11T10:18:00.000Z"
+milestone: null
+milestone_name: null
+status: between_milestones
+stopped_at: v1.0 closed 2026-05-12 — ready for /gsd-new-milestone
+last_updated: "2026-05-12T07:15:00.000Z"
 progress:
-  total_phases: 4
-  completed_phases: 2
-  total_plans: 11
-  completed_plans: 10
-  percent: 91
+  total_phases: 0
+  completed_phases: 0
+  total_plans: 0
+  completed_plans: 0
+  percent: 0
 ---
 
 # Project State: syai-claude-workshop
 
 **Initialized:** 2026-05-08
-**Last Updated:** 2026-05-08
+**Last Updated:** 2026-05-12
 
 ## Project Reference
 
-**What this is:** A content-agnostic Slidev scaffold for a half-day, advanced Claude Code workshop. The deck doubles as the live presentation vehicle and the post-workshop takeaway reference.
+See: `.planning/PROJECT.md` (updated 2026-05-12 after v1.0 close)
 
 **Core value:** Participants can follow the workshop live and return to the same URL afterward to step through the material at their own pace — without losing place, formatting, or copyable code.
 
-**Current focus:** Phase 04 — workshop-content-draft
+**Current focus:** Planning next milestone — run `/gsd-new-milestone` to define v1.1.
 
 ## Current Position
 
-Phase: 04 (workshop-content-draft) — EXECUTING
-Plan: 1 of 5
+Milestone v1.0 closed 2026-05-12. No active milestone.
 
-- **Milestone:** v1
-- **Phase:** 1 — Scaffold & Deploy — COMPLETE 2026-05-09
-- **Phase:** 2 — Theme & Visual Identity — COMPLETE 2026-05-09
-- **Plan:** 02-04 — COMPLETE (human verification approved 2026-05-09; THEM-04/05/06 closed)
-- **Plan:** 04-01 — COMPLETE 2026-05-09 (slides.md orchestrator + intro/outro chapters)
-- **Plan:** 04-04 — COMPLETE 2026-05-09 (Commands/Skills/Plugins chapter, 13 slides, CONT-04 satisfied)
-- **Status:** Executing Phase 04
-- **Progress:** [█████████░] 91%
+## Deferred Items
 
-## Performance Metrics
+Items acknowledged and deferred at v1.0 close on 2026-05-12:
 
-| Metric | Value |
-|--------|-------|
-| Phases planned | 4 |
-| Phases complete | 0 |
-| v1 requirements | 30 |
-| v1 requirements mapped | 30 (100%) |
-| Plans created | 2 |
-| Plans complete | 1 |
-| 01.1 duration | 3m |
-| 01.1 files created | 5 (package.json, bun.lock, slides.md, .gitignore, README.md) |
-| Phase 01 P02 | 2m | 3 tasks | 3 files |
-| Phase 02 P01 | 4min | 1 tasks | 1 files |
-| Phase 02-theme-visual-identity P02 | 1min | 1 tasks | 1 files |
-| Phase 02-theme-visual-identity P03 | 3min | 1 tasks | 1 files |
-| Phase 02-theme-visual-identity P04 | 5min | 3 tasks | 1 files |
-| Phase 04-workshop-content-draft P01 | 1min | 3 tasks | 3 files |
-| Phase 04-workshop-content-draft P04 | 2min | 1 tasks | 1 files |
+| Category | Item | Status |
+|----------|------|--------|
+| phase | Phase 3 — Components & Persistent UI (COMP-01..05) | Deferred 2026-05-09. Copy button + persistent sidebar are not the workshop's critical path. |
+| plan | 04-05 — Phase 4 quality gates (QUAL-01, QUAL-02) | Aborted 2026-05-12. Build + PDF passed mechanically; human-verify skipped because v1.0 chapter content is being retired for v1.1. |
+| requirements | COMP-01..05 | Deferred (linked to deferred Phase 3). |
+| requirements | CONT-03, CONT-05, QUAL-01..04 | Re-derived under v1.1 — v1.0 chapter content retired, so v1.0 acceptance against these requirements is no longer meaningful. |
+| quick_task | 260511-e98-top-progress-bar | Pre-close audit false-positive — work genuinely complete (commit `99434b6`); only the audit's filename pattern caused the flag. |
 
 ## Quick Tasks Completed
 
@@ -68,32 +50,19 @@ Plan: 1 of 5
 
 ## Accumulated Context
 
-### Key Decisions
+### Key Decisions (carried into v1.1)
 
-| Decision | Source | Rationale |
-|----------|--------|-----------|
-| Slidev `^52.15` on Bun (PM only) | research/STACK.md | Officially supported via `bun create slidev`; Slidev's internal Vite uses Node ≥20.12. |
-| `@slidev/theme-default` + UnoCSS token overlay (no fork) | research/STACK.md, PITFALLS #10 | Customize tokens, not layouts — keeps authoring contract to plain markdown. |
-| Combine Scaffold + Deploy into Phase 1 | ROADMAP.md | Coarse granularity; both serve "verifiable live URL" outcome with no UI work. |
-| Multi-file deck (`pages/*.md` via `src:`) from day one | research/ARCHITECTURE.md | Avoids monolithic `slides.md`; instructor authors one chapter at a time. |
-| No custom `vite.config.ts` for v1 | research/PITFALLS.md (#2043) | Sidesteps Bun + Slidev type-resolution edge case. |
-| `vercel.json` SPA rewrite mandatory in Phase 1 | research/PITFALLS.md (#1) | Direct slide-URL 404s would break the takeaway promise. |
-| GitHub→Vercel auto-deploy wired via dashboard (not CLI) | 01.2 Task 4 | `vercel git connect` failed (no remote configured); user completed manual dashboard link — DEPL-01 satisfied. |
-| DEPL-04 verified on production URL not preview | 01.2 Task 3 | Vercel deployment protection blocks curl on preview URLs (HTTP 401); production URL is public and equivalent. |
-| UnoCSS shortcuts as palette contract surface | 02-02 uno.config.ts | All six D-08 shortcut tokens encode D-01 palette verbatim; no inline hex in slides or CSS. No presets added — Slidev 52.x bundles its own. |
-| pre[class*="shiki"] selector for code-block frame | 02-03 style.css | Attribute selector survives Shiki theme renames across Slidev upgrades; !important on bg-color overrides Shiki inline style (T-02-07 accepted). |
-| .slidev-layout scoping for all custom CSS | 02-03 style.css | D-14/D-15: no bare global selectors; presenter chrome stays default Slidev appearance. |
-| vitesse-dark locked as Shiki theme | 02-04 verification | contrast 13.07:1 on #14110E panel — PASS; D-12 no fallback needed. |
-| Claude-adjacent identity confirmed | 02-04 human approval | Human reviewer approved 2026-05-09: dark + monospace + minimal, same family as Anthropic, clearly distinct. |
-| ASCII pyramid for Commands/Skills/Plugins mental model | 04-04 | Cleaner hierarchy representation than bullets for a three-layer primitive model. |
-| 3 ✓ Check: callouts in commands/skills chapter | 04-04 | One per walkthrough slide — natural sync points exceed minimum-1 requirement per D-11. |
-| VERIFY markers on argument syntax and plugin manifest | 04-04 | D-16: mark uncertain fields rather than invent. Two fields left for instructor spot-check. |
+See `.planning/PROJECT.md` `## Key Decisions` for the full table with outcomes. Highlights:
+
+- Tech stack locked: Slidev `^52.15` + Bun + Vercel + Node ≥ 20.12.
+- Visual identity locked: D-01 warm near-black palette with rust accent, JetBrains Mono + Inter, vitesse-dark Shiki, all CSS scoped under `.slidev-layout`.
+- Architecture locked: `slides.md` is a thin orchestrator; chapters live in `pages/*.md` and are pulled in via `src:` includes.
+- `global-top.vue` carries forward as the persistent progress indicator.
 
 ### Open Questions / TODOs
 
-- Copy-button implementation choice (Shiki transformer vs `global-bottom.vue` overlay vs per-component slot wrapper) — decide during Phase 3 planning; quick research recommended.
-- Vercel `routerMode: history` SPA rewrite verification — confirm on first preview deploy in Phase 1; fallback to `routerMode: 'hash'` if problematic.
-- Bun version pin — RESOLVED: bun@1.3.5 pinned in packageManager field.
+- v1.1 must define what "fine-grained per-section control" means concretely — this drives the chapter authoring approach.
+- Phase 3 (Copy button + persistent sidebar) deferred — revive only if dry-run friction surfaces.
 
 ### Blockers
 
@@ -101,24 +70,9 @@ None.
 
 ## Session Continuity
 
-**Files referenced this session:**
-
-- `/Users/kalebnim/Documents/GitHub/syai-claude-workshop/.planning/PROJECT.md`
-- `/Users/kalebnim/Documents/GitHub/syai-claude-workshop/.planning/REQUIREMENTS.md`
-- `/Users/kalebnim/Documents/GitHub/syai-claude-workshop/.planning/research/SUMMARY.md`
-- `/Users/kalebnim/Documents/GitHub/syai-claude-workshop/.planning/research/STACK.md`
-- `/Users/kalebnim/Documents/GitHub/syai-claude-workshop/.planning/research/ARCHITECTURE.md`
-- `/Users/kalebnim/Documents/GitHub/syai-claude-workshop/.planning/research/PITFALLS.md`
-- `/Users/kalebnim/Documents/GitHub/syai-claude-workshop/.planning/config.json`
-
-**Files created this session:**
-
-- `/Users/kalebnim/Documents/GitHub/syai-claude-workshop/.planning/ROADMAP.md`
-- `/Users/kalebnim/Documents/GitHub/syai-claude-workshop/.planning/STATE.md`
-
-**Last session:** 2026-05-09T05:49:03Z
-**Stopped at:** Completed 04-04-PLAN.md — Commands/Skills/Plugins chapter (pages/03-commands-skills-plugins.md)
-**Next action:** Execute Phase 04 Plan 05 — build/presenter/PDF verification
+**Last session:** 2026-05-12
+**Stopped at:** v1.0 milestone closed; PROJECT/ROADMAP/STATE/MILESTONES updated; awaiting `/gsd-new-milestone` to start v1.1.
+**Next action:** `/gsd-new-milestone` — questioning → requirements → roadmap.
 
 ---
-*State initialized: 2026-05-08*
+*State updated: 2026-05-12 after v1.0 milestone close*
