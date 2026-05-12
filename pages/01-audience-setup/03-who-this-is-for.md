@@ -1,8 +1,7 @@
-# Who this is for
+# Who'll get the most out of today
 
-**We assume you can:**
+**You're in the sweet spot if you:**
 
-- use git from the terminal
-- read a JSON config
-- follow a chat-LLM session
-- have installed Claude Code (and run it at least once)
+- have basic software-engineering skills (git, JSON, terminal)
+- have tried Claude Code once or twice before
+- want to token-maxx your daily workflow
