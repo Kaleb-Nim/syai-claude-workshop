@@ -12,9 +12,22 @@ Save and close.
 
 # Why it sticks
 
-Claude Code loads `~/.claude/CLAUDE.md` at the start of every session —
-as a message attached to your conversation, not as enforced config.
-Behavioral rules in there land in front of every prompt you send,
-with no per-session ceremony.
+```text
+~/.claude/CLAUDE.md  ── loaded at session start ──┐
+   (your rules)                                   │
+                                                  ▼
+                         ┌────────────────────────────┐
+                         │  conversation context      │
+                         │                            │
+                         │  [ CLAUDE.md ]   ← always  │
+                         │  [ prompt 1 ]              │
+                         │  [ reply 1 ]               │
+                         │  [ prompt 2 ]              │
+                         │  [ reply 2 ]               │
+                         │  ...                       │
+                         └────────────────────────────┘
+```
+
+A message attached to every conversation — not the system prompt, not enforced config. Behavioral rules sit in front of every prompt with no per-session ceremony.
 
 > ✓ Check: `grep -c 'When in plan mode' ~/.claude/CLAUDE.md` returns `1`.
