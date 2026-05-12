@@ -1,5 +1,7 @@
 # Where Claude reads from in your project
 
+<div class="text-dim text-sm -mt-2 mb-2">your typical Next.js stack — Claude touchpoints flagged ◀</div>
+
 ```text
 my-app/
 ├── .claude/                  ◀ workshop focus
