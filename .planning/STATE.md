@@ -2,15 +2,16 @@
 gsd_state_version: 1.0
 milestone: v1.1
 milestone_name: workshop-content-v2
-status: Roadmap defined; awaiting `/gsd-plan-phase 1`
+status: executing
 stopped_at: Phase 1 context gathered
-last_updated: "2026-05-12T09:43:41.274Z"
-last_activity: 2026-05-12 — v1.1 roadmap created (5 phases, 22/22 requirements mapped)
+last_updated: "2026-05-12T11:29:52.373Z"
+last_activity: 2026-05-12 -- Phase 01 execution started
 progress:
   total_phases: 5
   completed_phases: 0
-  total_plans: 0
+  total_plans: 8
   completed_plans: 0
+  percent: 0
 ---
 
 # Project State: syai-claude-workshop
@@ -24,14 +25,14 @@ See: `.planning/PROJECT.md` (updated 2026-05-12 after v1.0 close)
 
 **Core value:** Participants can follow the workshop live and return to the same URL afterward to step through the material at their own pace — without losing place, formatting, or copyable code.
 
-**Current focus:** v1.1 roadmap defined. Next action: `/gsd-plan-phase 1` to plan Phase 1 (Audience + Setup) section-by-section.
+**Current focus:** Phase 01 — audience-setup
 
 ## Current Position
 
-Phase: 1 — Audience + Setup (upcoming)
-Plan: —
-Status: Roadmap defined; awaiting `/gsd-plan-phase 1`
-Last activity: 2026-05-12 — v1.1 roadmap created (5 phases, 22/22 requirements mapped)
+Phase: 01 (audience-setup) — EXECUTING
+Plan: 1 of 8
+Status: Executing Phase 01
+Last activity: 2026-05-12 -- Phase 01 execution started
 
 ## Deferred Items
 
@@ -50,6 +51,7 @@ Items acknowledged and deferred at v1.0 close on 2026-05-12:
 | ID | Date | Description | Files | Commit |
 |----|------|-------------|-------|--------|
 | e98-top-progress-bar | 2026-05-11 | Top-of-viewport progress bar via Slidev `global-top` global layer | `global-top.vue` | `99434b6` |
+| prereqs-install-slides | 2026-05-12 | Added 2-slide prerequisites section (requirements + API-key install) for super-beginner participants; renumbered 02–06 → 03–07 | `pages/01-audience-setup/02-prereqs-install.md`, `pages/01-audience-setup.md` | (pending) |
 
 ## Accumulated Context
 
