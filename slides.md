@@ -19,28 +19,8 @@ shiki:
 
 # syai-claude-workshop
 
-advanced Claude Code workshop — hooks, subagents, commands
+advanced Claude Code workshop
 
 <div class="text-sm opacity-60 mt-8">
-  90 minutes · hands-on · type along
+  workshop content for v1.1 will be authored as <code>pages/*.md</code> chapters and re-linked via <code>src:</code> includes here
 </div>
-
----
-src: ./pages/00-intro.md
----
-
----
-src: ./pages/01-hooks.md
----
-
----
-src: ./pages/02-subagents-sdk.md
----
-
----
-src: ./pages/03-commands-skills-plugins.md
----
-
----
-src: ./pages/99-outro.md
----
