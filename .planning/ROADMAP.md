@@ -35,7 +35,15 @@
 **File**: `pages/01-audience-setup.md`
 **Requirements**: AUD-01, AUD-02, SET-01, SET-02
 **Success Criteria**: Derived during `/gsd-plan-phase 1` after research. The generic shape is: concept slide(s) + small hands-on win(s) + sync-check before the next chapter. User-suggested seeds for the wins: `/statusline`, editing `CLAUDE.md`.
-**Plans**: TBD via `/gsd-plan-phase 1` — plans correspond to sections, plus 1 verification plan for QUAL-01.
+**Plans:** 8 plans
+- [ ] 01-01-PLAN.md — wire chapter orchestrator (slides.md src include + pages/01-audience-setup.md)
+- [ ] 01-02-PLAN.md — section 01 chapter cover
+- [ ] 01-03-PLAN.md — section 02 who-this-is-for (AUD-01)
+- [ ] 01-04-PLAN.md — section 03 whats-covered (AUD-02)
+- [ ] 01-05-PLAN.md — section 04 claude-files-primer
+- [ ] 01-06-PLAN.md — section 05 win-statusline (SET-01 Win 1)
+- [ ] 01-07-PLAN.md — section 06 win-claude-md (SET-01 Win 2 + SET-02 sync-check)
+- [ ] 01-08-PLAN.md — bunx slidev build + presenter spot-check (QUAL-01)
 
 ### Phase 2: Hooks
 **Goal**: A reader opening `pages/02-hooks.md` understands what hooks are and how they work, and walks through one small live hands-on task with the presenter.
