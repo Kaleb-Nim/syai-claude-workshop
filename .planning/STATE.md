@@ -51,7 +51,7 @@ Items acknowledged and deferred at v1.0 close on 2026-05-12:
 | ID | Date | Description | Files | Commit |
 |----|------|-------------|-------|--------|
 | e98-top-progress-bar | 2026-05-11 | Top-of-viewport progress bar via Slidev `global-top` global layer | `global-top.vue` | `99434b6` |
-| prereqs-install-slides | 2026-05-12 | Added 2-slide prerequisites section (requirements + API-key install) for super-beginner participants; renumbered 02–06 → 03–07 | `pages/01-audience-setup/02-prereqs-install.md`, `pages/01-audience-setup.md` | (pending) |
+| prereqs-install-slides | 2026-05-12 | Added 2-slide prerequisites section (requirements + API-key install) for super-beginner participants; renumbered 02–06 → 03–07 | `pages/01-audience-setup/02-prereqs-install.md`, `pages/01-audience-setup.md` | `827126b` |
 
 ## Accumulated Context
 
