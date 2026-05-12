@@ -16,11 +16,24 @@ Participants can follow the workshop live and return to the same URL afterward t
 - **Deck structure:** `slides.md` is a thin orchestrator (head matter + cover slide stub). `pages/` is empty — v1.1 re-authors chapters from scratch.
 - **Auxiliary UI:** `global-top.vue` renders a 3px rust progress bar tracking `useNav().currentPage / total`.
 
-## Next Milestone Goals
+## Current Milestone: v1.1 workshop-content-v2
 
-**v1.1** — Re-author the three anchor workshop chapters (Hooks, Subagents & Agent SDK, Slash Commands + Skills + Plugins) with fine-grained per-section authoring control. Style, theme, deployment, and `slides.md` orchestrator pattern from v1.0 are **locked** — only the chapter authoring approach changes.
+**Goal:** Re-author the workshop deck with 5 chapters, drafted section-by-section with review checkpoints between sections, replacing v1.0's end-to-end chapter drafts.
 
-Goals to be refined via `/gsd-new-milestone` → questioning → requirements → roadmap.
+**Target features:**
+- Audience + Setup chapter — who this workshop is for + immediate Claude wins (`/statusline`, editing `CLAUDE.md`)
+- Hooks chapter — lifecycle hooks, settings.json, defensive + automation patterns
+- Skills chapter — `.claude/skills/<name>/SKILL.md`, progressive disclosure
+- Subagents + Agent SDK chapter — Task tool, `.claude/agents/*.md`, bridge to the programmatic SDK
+- Outro chapter — recap + pointers
+- Iterative section-by-section authoring loop with review checkpoint between sections
+- Lightweight quality gate at the end of each chapter phase (build + presenter spot-check)
+
+**Key context:**
+- Stack, theme, `.slidev-layout` scoping, `slides.md` `src:` orchestrator pattern, and `global-top.vue` progress bar are all locked from v1.0.
+- Slash commands and plugins are explicitly dropped from workshop scope for v1.1.
+- Phase numbering reset to Phase 1 (v1.0 phase artifacts archived).
+- PDF export gated only at milestone end, not per chapter.
 
 ## Requirements
 
@@ -33,10 +46,13 @@ Goals to be refined via `/gsd-new-milestone` → questioning → requirements �
 
 ### Active (v1.1)
 
-- [ ] Re-author Hooks chapter with finer per-section authoring control
-- [ ] Re-author Subagents & Agent SDK chapter with finer per-section authoring control
-- [ ] Re-author Slash Commands + Skills + Plugins chapter with finer per-section authoring control
-- [ ] Define what "fine-grained per-section control" means concretely (decided during `/gsd-new-milestone`)
+- [ ] Audience + Setup chapter authored section-by-section
+- [ ] Hooks chapter authored section-by-section
+- [ ] Skills chapter authored section-by-section
+- [ ] Subagents + Agent SDK chapter authored section-by-section
+- [ ] Outro chapter authored
+- [ ] Each chapter passes lightweight build + presenter spot-check gate before next chapter starts
+- [ ] Full-deck PDF export verified at milestone end
 
 ### Carried forward (re-derive in v1.1)
 
@@ -52,6 +68,8 @@ Goals to be refined via `/gsd-new-milestone` → questioning → requirements �
 | Live polling, Q&A, audience interaction widgets | Out of scope; workshop is presenter-led + async takeaway. |
 | Copy-to-clipboard button (COMP-01..02) | Deferred — chrome polish is not the critical path. Revive if dry-run friction surfaces. |
 | Persistent sidebar with section nav (COMP-03..05) | Deferred — same reason. `global-top.vue` progress bar covers the position-feedback need for now. |
+| Slash commands chapter | Dropped from workshop scope v1.1 — didn't earn its slot relative to setup/hooks/skills/subagents. Slash commands still exist as a primitive but are not workshop teaching material. |
+| Plugins chapter | Dropped from workshop scope v1.1 — same reasoning. |
 | Custom presenter mode customizations | Slidev defaults are sufficient; `.slidev-layout` scoping prevents leaks. |
 | PDF export feature work | Slidev provides this out of the box; gate it in CI, not as a feature. |
 | Multi-deck / module index landing page | Single deck only. |
@@ -114,4 +132,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-05-12 after v1.0 milestone close*
+*Last updated: 2026-05-12 — v1.1 workshop-content-v2 milestone started*

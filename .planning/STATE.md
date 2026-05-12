@@ -1,10 +1,10 @@
 ---
 gsd_state_version: 1.0
-milestone: null
-milestone_name: null
-status: between_milestones
-stopped_at: v1.0 closed 2026-05-12 — ready for /gsd-new-milestone
-last_updated: "2026-05-12T07:15:00.000Z"
+milestone: v1.1
+milestone_name: workshop-content-v2
+status: planning
+last_updated: "2026-05-12T08:14:15.982Z"
+last_activity: 2026-05-12
 progress:
   total_phases: 0
   completed_phases: 0
@@ -28,7 +28,10 @@ See: `.planning/PROJECT.md` (updated 2026-05-12 after v1.0 close)
 
 ## Current Position
 
-Milestone v1.0 closed 2026-05-12. No active milestone.
+Phase: Not started (defining requirements)
+Plan: —
+Status: Defining requirements
+Last activity: 2026-05-12 — Milestone v1.1 started
 
 ## Deferred Items
 
