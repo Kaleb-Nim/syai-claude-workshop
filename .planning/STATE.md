@@ -2,16 +2,16 @@
 gsd_state_version: 1.0
 milestone: v1.1
 milestone_name: workshop-content-v2
-status: executing
-stopped_at: Phase 1 context gathered
-last_updated: "2026-05-12T11:29:52.373Z"
-last_activity: 2026-05-12 -- Phase 01 execution started
+status: Phase 1 complete; ready for /gsd-plan-phase 2
+stopped_at: Phase 1 closed (presenter spot-check approved)
+last_updated: "2026-05-12T11:30:00.000Z"
+last_activity: 2026-05-12 -- Phase 01 complete (8/8 plans, presenter approved)
 progress:
   total_phases: 5
-  completed_phases: 0
+  completed_phases: 1
   total_plans: 8
-  completed_plans: 0
-  percent: 0
+  completed_plans: 8
+  percent: 20
 ---
 
 # Project State: syai-claude-workshop
@@ -25,14 +25,14 @@ See: `.planning/PROJECT.md` (updated 2026-05-12 after v1.0 close)
 
 **Core value:** Participants can follow the workshop live and return to the same URL afterward to step through the material at their own pace — without losing place, formatting, or copyable code.
 
-**Current focus:** Phase 01 — audience-setup
+**Current focus:** Phase 01 complete. Next: `/gsd-plan-phase 2` (Hooks).
 
 ## Current Position
 
-Phase: 01 (audience-setup) — EXECUTING
-Plan: 1 of 8
-Status: Executing Phase 01
-Last activity: 2026-05-12 -- Phase 01 execution started
+Phase: 01 (audience-setup) — ✅ COMPLETE
+Plan: 8 of 8
+Status: Phase 1 closed; presenter spot-check approved; deck builds clean.
+Last activity: 2026-05-12 -- Phase 01 complete (8/8 plans, presenter approved)
 
 ## Deferred Items
 
