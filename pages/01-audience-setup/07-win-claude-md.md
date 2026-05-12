@@ -6,6 +6,10 @@ Add this one line to `~/.claude/CLAUDE.md`:
 When in plan mode, always ask clarifying questions before you start planning.
 ```
 
+<div class="mt-10" />
+
+## How it lands in every conversation
+
 ```text
 ~/.claude/CLAUDE.md  ── loaded at session start ──┐
    (your rules)                                   │
