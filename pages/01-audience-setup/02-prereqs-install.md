@@ -4,8 +4,8 @@
 
 - macOS, Linux, or Windows (WSL recommended on Windows)
 - a terminal you're comfortable in
-- **Node.js 18+** — check with `node --version`
-- **git** — check with `git --version`
+- **Node.js 18+** — check with `node --version` · [download](https://nodejs.org/en/download)
+- **git** — check with `git --version` · [download](https://git-scm.com/downloads)
 
 **From us (today only):**
 
