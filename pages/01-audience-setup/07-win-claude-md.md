@@ -10,6 +10,8 @@ When in plan mode, always ask clarifying questions before you start planning.
 
 ## How it lands in every conversation
 
+<div class="text-xs leading-tight">
+
 ```text
 ~/.claude/CLAUDE.md  ── loaded at session start ──┐
    (your rules)                                   │
@@ -25,6 +27,8 @@ When in plan mode, always ask clarifying questions before you start planning.
                          │  ...                       │
                          └────────────────────────────┘
 ```
+
+</div>
 
 A message attached to every conversation — not the system prompt, not enforced config.
 
