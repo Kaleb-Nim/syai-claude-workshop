@@ -11,6 +11,9 @@ src: ./01-audience-setup/03-who-this-is-for.md
 src: ./01-audience-setup/04-whats-covered.md
 ---
 ---
+src: ./01-audience-setup/04b-fundamentals.md
+---
+---
 src: ./01-audience-setup/05-claude-files-primer.md
 ---
 ---
