@@ -6,9 +6,3 @@
 - read a JSON config
 - follow a chat-LLM session
 - have installed Claude Code (and run it at least once)
-
-**We do NOT assume you've:**
-
-- wired a hook
-- written a skill
-- spawned a subagent
