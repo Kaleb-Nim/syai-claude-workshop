@@ -65,7 +65,14 @@
 **File**: `pages/03-skills.md`
 **Requirements**: SKL-01, SKL-02, SKL-03
 **Success Criteria**: Derived during `/gsd-plan-phase 3` after research. Generic shape: what-is-a-skill + mental model (progressive disclosure, frontmatter matching) + one small live hands-on task.
-**Plans**: TBD via `/gsd-plan-phase 3`.
+**Plans:** 7 plans
+- [ ] 03-01-PLAN.md — wire chapter orchestrator (slides.md src include + pages/03-skills.md)
+- [ ] 03-02-PLAN.md — section 01 chapter cover
+- [ ] 03-03-PLAN.md — section 02 why-skills (Phase 2 bridge + 3 locked verbatim quotes, SKL-01)
+- [ ] 03-04-PLAN.md — section 03 how-skills-work (file shape + SKILL.md + 3-tier progressive disclosure, SKL-01 + SKL-02)
+- [ ] 03-05-PLAN.md — section 04 hands-on-build (mkdir + SKILL.md paste + softened hot-reload, SKL-03 wire)
+- [ ] 03-06-PLAN.md — section 05 hands-on-fire (trigger + control + two ✓ Checks, SKL-03 fire)
+- [ ] 03-07-PLAN.md — A1 dry-run + bunx slidev build + presenter spot-check (QUAL-01)
 
 ### Phase 4: Subagents + Agent SDK
 **Goal**: A reader opening `pages/04-subagents-sdk.md` understands subagents in Claude Code, sees the same primitive bridge to the programmatic Agent SDK, and walks through one small live hands-on task.
