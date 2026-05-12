@@ -34,3 +34,16 @@ You wire them in `~/.claude/settings.json`:
 <div class="text-dim text-xs mt-4">
   more exist: <code>PreToolUse</code>, <code>PostToolUse</code>, <code>UserPromptSubmit</code>, <code>SessionStart</code> — same shape
 </div>
+
+<style scoped>
+pre, code {
+  font-size: 0.7rem !important;
+  line-height: 1.15 !important;
+}
+.slidev-code {
+  padding: 0.6em 0.9em !important;
+}
+h1 {
+  margin-bottom: 0.4em !important;
+}
+</style>
