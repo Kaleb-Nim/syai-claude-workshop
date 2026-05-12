@@ -6,12 +6,6 @@ Add this one line to `~/.claude/CLAUDE.md`:
 When in plan mode, always ask clarifying questions before you start planning.
 ```
 
-Save and close.
-
----
-
-# Why it sticks
-
 ```text
 ~/.claude/CLAUDE.md  ── loaded at session start ──┐
    (your rules)                                   │
@@ -28,6 +22,6 @@ Save and close.
                          └────────────────────────────┘
 ```
 
-A message attached to every conversation — not the system prompt, not enforced config. Behavioral rules sit in front of every prompt with no per-session ceremony.
+A message attached to every conversation — not the system prompt, not enforced config.
 
 > ✓ Check: `grep -c 'When in plan mode' ~/.claude/CLAUDE.md` returns `1`.
