@@ -28,3 +28,6 @@ advanced Claude Code workshop
 ---
 src: ./pages/01-audience-setup.md
 ---
+---
+src: ./pages/02-hooks.md
+---
