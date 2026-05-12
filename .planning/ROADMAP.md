@@ -51,7 +51,13 @@
 **File**: `pages/02-hooks.md`
 **Requirements**: HOOK-01, HOOK-02, HOOK-03
 **Success Criteria**: Derived during `/gsd-plan-phase 2` after research. Generic shape: why-it-exists framing + how-it-works (lifecycle events + `settings.json` wiring) + one small live hands-on task. User-suggested seed for the hands-on: sound-notification hook on `Stop` and `Notification` events (`afplay` macOS / `aplay` Linux).
-**Plans**: TBD via `/gsd-plan-phase 2`.
+**Plans:** 6 plans
+- [ ] 02-01-PLAN.md — scaffolding (slides.md include + pages/02-hooks.md orchestrator + section 01 cover)
+- [ ] 02-02-PLAN.md — section 02 why-hooks (IFTTT framing + 3 locked determinism quotes, HOOK-01)
+- [ ] 02-03-PLAN.md — section 03 how-hooks-work (Stop + Notification + minimal settings.json JSON, HOOK-02)
+- [ ] 02-04-PLAN.md — section 04 hands-on-build (full Stop+Notification paste-target JSON, HOOK-03 wire)
+- [ ] 02-05-PLAN.md — section 05 hands-on-fire (trigger both events + two ✓ Checks, HOOK-03 fire)
+- [ ] 02-06-PLAN.md — bunx slidev build + presenter spot-check (QUAL-01)
 
 ### Phase 3: Skills
 **Goal**: A reader opening `pages/03-skills.md` understands what skills are, how progressive disclosure works, and walks through one small live hands-on task.
