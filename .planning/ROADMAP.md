@@ -22,7 +22,7 @@
 - [x] **Phase 1: Audience + Setup** — Open the workshop, establish the target participant, deliver immediate small Claude wins. ✅ completed 2026-05-12
 - [x] **Phase 2: Skills** — Teach what skills are, how they work (progressive disclosure), with one small hands-on task. ✅ completed 2026-05-12 (renumbered from Phase 3 on 2026-05-13 — see commit history)
 - [x] **Phase 3: Hooks** — Teach what hooks are, how they work, with one small hands-on task. ✅ completed 2026-05-12 (renumbered from Phase 2 on 2026-05-13 — see commit history)
-- [ ] **Phase 4: Subagents + Agent SDK** — Teach subagents in Claude Code, bridge to the programmatic SDK, with one small hands-on task.
+- [ ] **Phase 4: Subagents** — Teach subagents in Claude Code: what they are, why isolated context matters, build one live with `/agents`.
 - [ ] **Phase 5: Outro + Milestone Gate** — Recap, where-to-next, closing URL, full-deck PDF export gate.
 
 > **Per-phase research policy:** Each chapter phase begins with a researcher spawn during `/gsd-plan-phase N` that surveys top articles + official docs for the primitive being taught. Detailed worked examples, exercise scaffolds, and per-section success criteria are derived from that research, not from this roadmap. The phase details below are intentionally generic.
@@ -74,13 +74,21 @@
 - [x] 03-05-PLAN.md — section 05 hands-on-fire (trigger both events + two ✓ Checks, HOOK-03 fire)
 - [x] 03-06-PLAN.md — bunx slidev build + presenter spot-check (QUAL-01)
 
-### Phase 4: Subagents + Agent SDK
-**Goal**: A reader opening `pages/04-subagents-sdk.md` understands subagents in Claude Code, sees the same primitive bridge to the programmatic Agent SDK, and walks through one small live hands-on task.
+### Phase 4: Subagents
+**Goal**: A reader opening `pages/04-subagents.md` understands subagents in Claude Code — what they are (`.claude/agents/<name>.md` file shape + Task/Agent tool delegation), why they exist (isolated context windows), and walks through one small live hands-on task building a subagent via the `/agents` slash command.
 **Depends on**: Phase 3.
-**File**: `pages/04-subagents-sdk.md`
-**Requirements**: SUB-01, SUB-02, SUB-03
-**Success Criteria**: Derived during `/gsd-plan-phase 4` after research. Generic shape: what-is-a-subagent (Task tool + `.claude/agents/*.md`) + bridge-to-SDK + one small live hands-on task.
-**Plans**: TBD via `/gsd-plan-phase 4`.
+**File**: `pages/04-subagents.md`
+**Requirements**: SUB-01, SUB-03
+**Success Criteria**: 7 section files under `pages/04-subagents/` covering: cover, skills-vs-subagents framing (verbatim dev.to quotes), why-subagents (context preservation), how-subagents-work (file shape + invocation modes), 3-up showcase (python-pro / quant-analyst / market-researcher), hands-on build via `/agents` (commit-message-writer), hands-on fire (invoke + observe isolated context).
+**Plans:** 8 plans
+- [x] 04-01-PLAN.md — scaffolding (slides.md include + pages/04-subagents.md orchestrator + section 01 cover)
+- [x] 04-02-PLAN.md — section 02 skills-vs-subagents (cookbook framing + 3 verbatim dev.to quotes)
+- [x] 04-03-PLAN.md — section 03 why-subagents (context preservation framing, D-04)
+- [x] 04-04-PLAN.md — section 04 how-subagents-work (file shape + VoltAgent template + invocation modes, SUB-01)
+- [x] 04-05-PLAN.md — section 05 showcase (3-up grid: python-pro / quant-analyst / market-researcher, D-06)
+- [x] 04-06-PLAN.md — section 06 hands-on-build via /agents (SUB-03 wire, D-07)
+- [x] 04-07-PLAN.md — section 07 hands-on-fire (invoke + observe isolated context, SUB-03 fire, D-08)
+- [ ] 04-08-PLAN.md — ROADMAP/REQUIREMENTS/STATE + bunx slidev build + presenter spot-check (QUAL-01 + D-09 admin)
 
 ### Phase 5: Outro + Milestone Gate
 **Goal**: A reader opening `pages/99-outro.md` gets a clean recap, knows where to go next, ends on the production deck URL — and the full deck exports cleanly to PDF for milestone close.
@@ -106,7 +114,7 @@
 | 1. Audience + Setup | v1.1 | 8/8 | Complete | 2026-05-12 |
 | 2. Skills | v1.1 | 7/7 | Complete | 2026-05-12 |
 | 3. Hooks | v1.1 | 6/6 | Complete | 2026-05-13 |
-| 4. Subagents + Agent SDK | v1.1 | 0/0 | Not started | — |
+| 4. Subagents | v1.1 | 7/8 | In progress | — |
 | 5. Outro + Milestone Gate | v1.1 | 0/0 | Not started | — |
 
 ---
