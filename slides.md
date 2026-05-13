@@ -35,3 +35,6 @@ src: ./pages/02-skills.md
 ---
 src: ./pages/03-hooks.md
 ---
+---
+src: ./pages/99-resources.md
+---
