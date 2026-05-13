@@ -8,10 +8,10 @@ last_updated: "2026-05-13T00:00:00.000Z"
 last_activity: 2026-05-13 -- chapter swap: skills now Ch 2, hooks now Ch 3
 progress:
   total_phases: 5
-  completed_phases: 1
-  total_plans: 21
-  completed_plans: 13
-  percent: 62
+  completed_phases: 3
+  total_plans: 21  # phases 4+5 plan counts TBD via /gsd-plan-phase
+  completed_plans: 21
+  percent: 60  # 3/5 phases complete
 ---
 
 # Project State: syai-claude-workshop
@@ -75,9 +75,13 @@ None.
 
 ## Session Continuity
 
-**Last session:** 2026-05-12T13:33:00.625Z
-**Stopped at:** Phase 3 context gathered
-**Next action:** `/gsd-plan-phase 1` — decompose Phase 1 into section plans (one plan per section, plus a QUAL-01 verification plan).
+**Last session:** 2026-05-13T00:00:00.000Z
+**Stopped at:** Phase 03 (Hooks) Plan 06 closed — QUAL-01 build-verify approved
+**Next action:** `/gsd-plan-phase 4` — decompose Phase 4 (Subagents + Agent SDK) into section plans.
+
+## Recently Completed
+
+- **2026-05-13 — Phase 03 (Hooks) Plan 06** — QUAL-01 build-verify + presenter spot-check. `bunx slidev build` exit 0; `dist/index.html` produced; Chapter 3 approved in presenter mode. Conditional font-shrink retrofit (Task 3) skipped (already inline). SUMMARY: `.planning/phases/03-hooks/03-06-SUMMARY.md`. Requirements: QUAL-01 marked complete.
 
 ---
-*State updated: 2026-05-12 after v1.1 roadmap creation*
+*State updated: 2026-05-13 after Phase 3 (Hooks) close*
