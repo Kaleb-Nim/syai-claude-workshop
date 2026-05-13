@@ -31,10 +31,10 @@
 - [x] **HOOK-02**: Chapter teaches how hooks work mechanically — relevant lifecycle events + `settings.json` wiring with one concrete JSON shape. Specific events emphasised selected during `/gsd-plan-phase 3` research
 - [x] **HOOK-03**: Chapter includes one small live hands-on task that participants build alongside the presenter. Specific worked example derived during `/gsd-plan-phase 3` research; user-suggested seed: sound-notification hook on `Stop` and `Notification` events (`afplay` macOS / `aplay` Linux)
 
-### Subagents + Agent SDK chapter (`pages/04-subagents-sdk.md`)
+### Subagents chapter (`pages/04-subagents.md`)
 
 - [ ] **SUB-01**: Chapter explains subagents in Claude Code — Task tool, `.claude/agents/<name>.md` file shape, user-invoked vs Claude-invoked distinction
-- [ ] **SUB-02**: Chapter bridges to the programmatic Agent SDK — same primitive outside the CLI in a short snippet
+- [~] **SUB-02**: ~~Chapter bridges to the programmatic Agent SDK — same primitive outside the CLI in a short snippet~~ — **closed-as-out-of-scope for v1.1** (dropped per Phase 4 CONTEXT.md D-09; not deferred — explicitly removed from milestone scope on 2026-05-13)
 - [ ] **SUB-03**: Chapter includes one small live hands-on task. Specific worked example derived during `/gsd-plan-phase 4` research
 
 ### Outro chapter (`pages/99-outro.md`)
@@ -102,9 +102,9 @@ Deferred to v1.2+ or beyond.
 | HOOK-01 | Phase 3: Hooks | — |
 | HOOK-02 | Phase 3: Hooks | Specifics (events emphasised) from research |
 | HOOK-03 | Phase 3: Hooks | Specifics from research (hint: sound-notification on Stop/Notification) |
-| SUB-01 | Phase 4: Subagents + Agent SDK | — |
-| SUB-02 | Phase 4: Subagents + Agent SDK | — |
-| SUB-03 | Phase 4: Subagents + Agent SDK | Specifics from research |
+| SUB-01 | Phase 4: Subagents | — |
+| SUB-02 | Phase 4: Subagents | closed-as-out-of-scope (v1.1) |
+| SUB-03 | Phase 4: Subagents | Specifics from research (commit-message-writer via /agents) |
 | OUT-01 | Phase 5: Outro + Milestone Gate | — |
 | OUT-02 | Phase 5: Outro + Milestone Gate | — |
 | OUT-03 | Phase 5: Outro + Milestone Gate | — |
