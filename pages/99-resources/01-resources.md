@@ -29,6 +29,12 @@ References used while building this workshop — bookmark, skim later.
       </a>
       <div class="text-dim text-xs">dev.to / nunc</div>
     </li>
+    <li>
+      <a href="https://code.claude.com/docs/en/sub-agents" target="_blank">
+        Claude Code Subagents — official docs
+      </a>
+      <div class="text-dim text-xs">code.claude.com</div>
+    </li>
   </ul>
 </div>
 
@@ -46,6 +52,12 @@ References used while building this workshop — bookmark, skim later.
         Claude Code — video walkthrough
       </a>
       <div class="text-dim text-xs">youtube.com</div>
+    </li>
+    <li>
+      <a href="https://github.com/VoltAgent/awesome-claude-code-subagents" target="_blank">
+        awesome-claude-code-subagents
+      </a>
+      <div class="text-dim text-xs">github.com/VoltAgent</div>
     </li>
   </ul>
 </div>
