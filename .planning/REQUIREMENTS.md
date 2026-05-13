@@ -15,21 +15,21 @@
 ### Audience + Setup chapter (`pages/01-audience-setup.md`)
 
 - [ ] **AUD-01**: Chapter establishes who this workshop is for — target participant profile (engineers comfortable with Git, terminals, and chat-mode LLMs but haven't pushed past chat into Claude Code's deeper primitives)
-- [ ] **AUD-02**: Chapter establishes what's covered (4 topic chapters: Hooks, Skills, Subagents, SDK) and what's explicitly excluded (slash commands, plugins) so participants align before the deep chapters
+- [ ] **AUD-02**: Chapter establishes what's covered (4 topic chapters: Skills, Hooks, Subagents, SDK) and what's explicitly excluded (slash commands, plugins) so participants align before the deep chapters
 - [ ] **SET-01**: Chapter delivers at least two small immediate Claude wins so participants leave Chapter 1 with Claude already working better for them than when they walked in. Specific wins selected during `/gsd-plan-phase 1` research; user-suggested seeds: `/statusline`, editing `CLAUDE.md`
 - [ ] **SET-02**: Chapter ends with a sync-check / hands-on confirming the room is aligned before Chapter 2 starts
 
-### Hooks chapter (`pages/02-hooks.md`)
+### Skills chapter (`pages/02-skills.md`)
+
+- [x] **SKL-01**: Chapter explains what a skill is — `.claude/skills/<name>/SKILL.md` file shape, where it lives, how Claude discovers it
+- [x] **SKL-02**: Chapter teaches the mental model — progressive disclosure, why skills load lazily, what role frontmatter plays in matching
+- [x] **SKL-03**: Chapter includes one small live hands-on task. Specific worked example derived during `/gsd-plan-phase 2` research
+
+### Hooks chapter (`pages/03-hooks.md`)
 
 - [x] **HOOK-01**: Chapter frames why hooks exist — what problem they solve, what becomes possible because of them
-- [x] **HOOK-02**: Chapter teaches how hooks work mechanically — relevant lifecycle events + `settings.json` wiring with one concrete JSON shape. Specific events emphasised selected during `/gsd-plan-phase 2` research
-- [x] **HOOK-03**: Chapter includes one small live hands-on task that participants build alongside the presenter. Specific worked example derived during `/gsd-plan-phase 2` research; user-suggested seed: sound-notification hook on `Stop` and `Notification` events (`afplay` macOS / `aplay` Linux)
-
-### Skills chapter (`pages/03-skills.md`)
-
-- [ ] **SKL-01**: Chapter explains what a skill is — `.claude/skills/<name>/SKILL.md` file shape, where it lives, how Claude discovers it
-- [ ] **SKL-02**: Chapter teaches the mental model — progressive disclosure, why skills load lazily, what role frontmatter plays in matching
-- [ ] **SKL-03**: Chapter includes one small live hands-on task. Specific worked example derived during `/gsd-plan-phase 3` research
+- [x] **HOOK-02**: Chapter teaches how hooks work mechanically — relevant lifecycle events + `settings.json` wiring with one concrete JSON shape. Specific events emphasised selected during `/gsd-plan-phase 3` research
+- [x] **HOOK-03**: Chapter includes one small live hands-on task that participants build alongside the presenter. Specific worked example derived during `/gsd-plan-phase 3` research; user-suggested seed: sound-notification hook on `Stop` and `Notification` events (`afplay` macOS / `aplay` Linux)
 
 ### Subagents + Agent SDK chapter (`pages/04-subagents-sdk.md`)
 
@@ -45,7 +45,7 @@
 
 ### Authoring workflow quality gates
 
-- [ ] **QUAL-01**: Each chapter phase ends with a lightweight build + presenter spot-check — `bunx slidev build` exits 0, the chapter renders clean in presenter mode, before the next chapter phase starts
+- [x] **QUAL-01**: Each chapter phase ends with a lightweight build + presenter spot-check — `bunx slidev build` exits 0, the chapter renders clean in presenter mode, before the next chapter phase starts
 - [x] **QUAL-02**: Each section within a chapter is committed atomically with a section-scoped commit message
 - [ ] **QUAL-03**: Milestone-end full-deck PDF export via `bunx slidev export` produces a readable PDF (>50KB, all 5 chapters present in order)
 - [x] **QUAL-04**: All chapter content respects the locked v1.0 tone constraints — confident, terse, no hype prose, no exclamation marks in body, no screenshots (code/terminal blocks only)
@@ -96,12 +96,12 @@ Deferred to v1.2+ or beyond.
 | AUD-02 | Phase 1: Audience + Setup | — |
 | SET-01 | Phase 1: Audience + Setup | Specifics from research (hint: /statusline, CLAUDE.md edit) |
 | SET-02 | Phase 1: Audience + Setup | — |
-| HOOK-01 | Phase 2: Hooks | — |
-| HOOK-02 | Phase 2: Hooks | Specifics (events emphasised) from research |
-| HOOK-03 | Phase 2: Hooks | Specifics from research (hint: sound-notification on Stop/Notification) |
-| SKL-01 | Phase 3: Skills | — |
-| SKL-02 | Phase 3: Skills | — |
-| SKL-03 | Phase 3: Skills | Specifics from research |
+| SKL-01 | Phase 2: Skills | — |
+| SKL-02 | Phase 2: Skills | — |
+| SKL-03 | Phase 2: Skills | Specifics from research |
+| HOOK-01 | Phase 3: Hooks | — |
+| HOOK-02 | Phase 3: Hooks | Specifics (events emphasised) from research |
+| HOOK-03 | Phase 3: Hooks | Specifics from research (hint: sound-notification on Stop/Notification) |
 | SUB-01 | Phase 4: Subagents + Agent SDK | — |
 | SUB-02 | Phase 4: Subagents + Agent SDK | — |
 | SUB-03 | Phase 4: Subagents + Agent SDK | Specifics from research |

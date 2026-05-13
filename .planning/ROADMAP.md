@@ -20,8 +20,8 @@
 ### 🚧 v1.1 workshop-content-v2
 
 - [x] **Phase 1: Audience + Setup** — Open the workshop, establish the target participant, deliver immediate small Claude wins. ✅ completed 2026-05-12
-- [ ] **Phase 2: Hooks** — Teach what hooks are, how they work, with one small hands-on task.
-- [ ] **Phase 3: Skills** — Teach what skills are, how they work (progressive disclosure), with one small hands-on task.
+- [x] **Phase 2: Skills** — Teach what skills are, how they work (progressive disclosure), with one small hands-on task. ✅ completed 2026-05-12 (renumbered from Phase 3 on 2026-05-13 — see commit history)
+- [x] **Phase 3: Hooks** — Teach what hooks are, how they work, with one small hands-on task. ✅ completed 2026-05-12 (renumbered from Phase 2 on 2026-05-13 — see commit history)
 - [ ] **Phase 4: Subagents + Agent SDK** — Teach subagents in Claude Code, bridge to the programmatic SDK, with one small hands-on task.
 - [ ] **Phase 5: Outro + Milestone Gate** — Recap, where-to-next, closing URL, full-deck PDF export gate.
 
@@ -45,34 +45,34 @@
 - [x] 01-07-PLAN.md — section 06 win-claude-md (SET-01 Win 2 + SET-02 sync-check)
 - [x] 01-08-PLAN.md — bunx slidev build + presenter spot-check (QUAL-01)
 
-### Phase 2: Hooks
-**Goal**: A reader opening `pages/02-hooks.md` understands what hooks are and how they work, and walks through one small live hands-on task with the presenter.
+### Phase 2: Skills
+**Goal**: A reader opening `pages/02-skills.md` understands what skills are, how progressive disclosure works, and walks through one small live hands-on task.
 **Depends on**: Phase 1.
-**File**: `pages/02-hooks.md`
-**Requirements**: HOOK-01, HOOK-02, HOOK-03
-**Success Criteria**: Derived during `/gsd-plan-phase 2` after research. Generic shape: why-it-exists framing + how-it-works (lifecycle events + `settings.json` wiring) + one small live hands-on task. User-suggested seed for the hands-on: sound-notification hook on `Stop` and `Notification` events (`afplay` macOS / `aplay` Linux).
-**Plans:** 6 plans
-- [x] 02-01-PLAN.md — scaffolding (slides.md include + pages/02-hooks.md orchestrator + section 01 cover)
-- [x] 02-02-PLAN.md — section 02 why-hooks (IFTTT framing + 3 locked determinism quotes, HOOK-01)
-- [x] 02-03-PLAN.md — section 03 how-hooks-work (Stop + Notification + minimal settings.json JSON, HOOK-02)
-- [x] 02-04-PLAN.md — section 04 hands-on-build (full Stop+Notification paste-target JSON, HOOK-03 wire)
-- [x] 02-05-PLAN.md — section 05 hands-on-fire (trigger both events + two ✓ Checks, HOOK-03 fire)
-- [ ] 02-06-PLAN.md — bunx slidev build + presenter spot-check (QUAL-01)
-
-### Phase 3: Skills
-**Goal**: A reader opening `pages/03-skills.md` understands what skills are, how progressive disclosure works, and walks through one small live hands-on task.
-**Depends on**: Phase 2.
-**File**: `pages/03-skills.md`
+**File**: `pages/02-skills.md`
 **Requirements**: SKL-01, SKL-02, SKL-03
-**Success Criteria**: Derived during `/gsd-plan-phase 3` after research. Generic shape: what-is-a-skill + mental model (progressive disclosure, frontmatter matching) + one small live hands-on task.
+**Success Criteria**: Generic shape: what-is-a-skill + mental model (progressive disclosure, frontmatter matching) + one small live hands-on task.
 **Plans:** 7 plans
-- [ ] 03-01-PLAN.md — wire chapter orchestrator (slides.md src include + pages/03-skills.md)
-- [ ] 03-02-PLAN.md — section 01 chapter cover
-- [ ] 03-03-PLAN.md — section 02 why-skills (Phase 2 bridge + 3 locked verbatim quotes, SKL-01)
-- [ ] 03-04-PLAN.md — section 03 how-skills-work (file shape + SKILL.md + 3-tier progressive disclosure, SKL-01 + SKL-02)
-- [ ] 03-05-PLAN.md — section 04 hands-on-build (mkdir + SKILL.md paste + softened hot-reload, SKL-03 wire)
-- [ ] 03-06-PLAN.md — section 05 hands-on-fire (trigger + control + two ✓ Checks, SKL-03 fire)
-- [ ] 03-07-PLAN.md — A1 dry-run + bunx slidev build + presenter spot-check (QUAL-01)
+- [x] 02-01-PLAN.md — wire chapter orchestrator (slides.md src include + pages/02-skills.md)
+- [x] 02-02-PLAN.md — section 01 chapter cover
+- [x] 02-03-PLAN.md — section 02 why-skills (procedural-knowledge framing + 3 locked verbatim quotes, SKL-01)
+- [x] 02-04-PLAN.md — section 03 how-skills-work (file shape + SKILL.md + 3-tier progressive disclosure, SKL-01 + SKL-02)
+- [x] 02-05-PLAN.md — section 04 hands-on-build (mkdir + SKILL.md paste + softened hot-reload, SKL-03 wire)
+- [x] 02-06-PLAN.md — section 05 hands-on-fire (trigger + control + two ✓ Checks, SKL-03 fire)
+- [x] 02-07-PLAN.md — A1 dry-run + bunx slidev build + presenter spot-check (QUAL-01)
+
+### Phase 3: Hooks
+**Goal**: A reader opening `pages/03-hooks.md` understands what hooks are and how they work, and walks through one small live hands-on task with the presenter.
+**Depends on**: Phase 2.
+**File**: `pages/03-hooks.md`
+**Requirements**: HOOK-01, HOOK-02, HOOK-03
+**Success Criteria**: Generic shape: why-it-exists framing + how-it-works (lifecycle events + `settings.json` wiring) + one small live hands-on task. Seed: sound-notification hook on `Stop` and `Notification` events (`afplay` macOS / `aplay` Linux). Opens with a contrast back-reference to skills (Chapter 2 → 3 bridge).
+**Plans:** 6 plans
+- [x] 03-01-PLAN.md — scaffolding (slides.md include + pages/03-hooks.md orchestrator + section 01 cover)
+- [x] 03-02-PLAN.md — section 02 why-hooks (IFTTT framing + 3 locked determinism quotes, HOOK-01)
+- [x] 03-03-PLAN.md — section 03 how-hooks-work (Stop + Notification + minimal settings.json JSON, HOOK-02)
+- [x] 03-04-PLAN.md — section 04 hands-on-build (full Stop+Notification paste-target JSON, HOOK-03 wire)
+- [x] 03-05-PLAN.md — section 05 hands-on-fire (trigger both events + two ✓ Checks, HOOK-03 fire)
+- [x] 03-06-PLAN.md — bunx slidev build + presenter spot-check (QUAL-01)
 
 ### Phase 4: Subagents + Agent SDK
 **Goal**: A reader opening `pages/04-subagents-sdk.md` understands subagents in Claude Code, sees the same primitive bridge to the programmatic Agent SDK, and walks through one small live hands-on task.
@@ -103,9 +103,9 @@
 
 | Phase | Milestone | Plans Complete | Status | Completed |
 |-------|-----------|----------------|--------|-----------|
-| 1. Audience + Setup | v1.1 | 0/0 | Not started | — |
-| 2. Hooks | v1.1 | 0/0 | Not started | — |
-| 3. Skills | v1.1 | 0/0 | Not started | — |
+| 1. Audience + Setup | v1.1 | 8/8 | Complete | 2026-05-12 |
+| 2. Skills | v1.1 | 7/7 | Complete | 2026-05-12 |
+| 3. Hooks | v1.1 | 6/6 | Complete | 2026-05-13 |
 | 4. Subagents + Agent SDK | v1.1 | 0/0 | Not started | — |
 | 5. Outro + Milestone Gate | v1.1 | 0/0 | Not started | — |
 

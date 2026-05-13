@@ -3,15 +3,15 @@ gsd_state_version: 1.0
 milestone: v1.1
 milestone_name: workshop-content-v2
 status: executing
-stopped_at: Phase 3 context gathered
-last_updated: "2026-05-12T13:33:04.908Z"
-last_activity: 2026-05-12
+stopped_at: Phases 2 + 3 complete (chapter order swapped 2026-05-13)
+last_updated: "2026-05-13T00:00:00.000Z"
+last_activity: 2026-05-13 -- chapter swap: skills now Ch 2, hooks now Ch 3
 progress:
   total_phases: 5
   completed_phases: 1
-  total_plans: 18
+  total_plans: 21
   completed_plans: 13
-  percent: 72
+  percent: 62
 ---
 
 # Project State: syai-claude-workshop
@@ -25,14 +25,14 @@ See: `.planning/PROJECT.md` (updated 2026-05-12 after v1.0 close)
 
 **Core value:** Participants can follow the workshop live and return to the same URL afterward to step through the material at their own pace — without losing place, formatting, or copyable code.
 
-**Current focus:** Phase 02 — hooks
+**Current focus:** Phase 4 — Subagents + Agent SDK (next)
 
 ## Current Position
 
-Phase: 02 (hooks) — EXECUTING
-Plan: 6 of 6
-Status: Ready to execute
-Last activity: 2026-05-12
+Phases 2 (Skills) and 3 (Hooks) complete; chapter order swapped 2026-05-13 (skills now Ch 2, hooks now Ch 3).
+Phase: 04 (subagents-sdk) — NOT STARTED
+Plan: 0 of TBD
+Last activity: 2026-05-13 -- chapter swap committed
 
 ## Deferred Items
 
