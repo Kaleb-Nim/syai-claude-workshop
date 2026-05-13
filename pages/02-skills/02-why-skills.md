@@ -1,11 +1,23 @@
+---
+layout: two-cols
+---
+
 # Why this matters
 
-A skill is the onboarding doc for one specific job — *"here's how we review PRs around here."* You write it once.
+A skill is a recipe in Claude's cookbook for one specific job — *"here's how we bake the sourdough around here."* You write it once.
 
 Every new teammate (including Claude, every time) picks it up only when that job comes up.
 
 <div class="text-dim text-sm mt-6">
   write the doc once · loaded only when relevant · no reminding
+</div>
+
+::right::
+
+<video src="/skill-in-action.mp4" autoplay muted loop playsinline class="rounded-lg shadow-lg w-full mt-12"></video>
+
+<div class="text-dim text-xs mt-2 text-center">
+  clip: Anthropic — "What are skills?" (youtube.com/watch?v=bjdBVZa66oU)
 </div>
 
 ---
