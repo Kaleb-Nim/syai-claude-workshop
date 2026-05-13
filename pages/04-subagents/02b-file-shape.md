@@ -1,6 +1,6 @@
-# A subagent is a markdown file
+# Subagent body structure
 
-Live under `.claude/agents/<name>.md` (project scope) or `~/.claude/agents/<name>.md` (user scope, available in every project). Two required frontmatter fields: `name` and `description`. The rest is optional.
+Two required frontmatter fields: `name` and `description`. The rest is optional.
 
 ```yaml
 ---
