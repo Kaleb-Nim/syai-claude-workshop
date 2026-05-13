@@ -18,12 +18,24 @@ shiki:
   langs: ['ts', 'tsx', 'bash', 'json', 'md', 'yaml']
 ---
 
-# syai-claude-workshop
+<div class="flex items-center justify-center gap-4 text-2xl font-medium tracking-wide opacity-80">
+  <span>SYAI</span>
+  <span class="opacity-40">×</span>
+  <span>YTSG</span>
+</div>
 
-advanced Claude Code workshop
+<div class="text-xs uppercase tracking-[0.3em] opacity-50 mt-2">
+  Singapore Youth AI · Youth Tech SG
+</div>
 
-<div class="text-sm opacity-60 mt-8">
-  workshop content for v1.1 will be authored as <code>pages/*.md</code> chapters and re-linked via <code>src:</code> includes here
+# Claude Code Workshop
+
+<div class="text-lg opacity-70 -mt-2">
+  technical Claude Code workshop
+</div>
+
+<div class="text-sm opacity-50 mt-12">
+  press <kbd>←</kbd> <kbd>→</kbd> to navigate slides
 </div>
 
 ---
@@ -34,6 +46,9 @@ src: ./pages/02-skills.md
 ---
 ---
 src: ./pages/03-hooks.md
+---
+---
+src: ./pages/04-subagents.md
 ---
 ---
 src: ./pages/99-resources.md
