@@ -53,12 +53,6 @@ References used while building this workshop — bookmark, skim later.
       </a>
       <div class="text-dim text-xs">youtube.com</div>
     </li>
-    <li>
-      <a href="https://github.com/VoltAgent/awesome-claude-code-subagents" target="_blank">
-        awesome-claude-code-subagents
-      </a>
-      <div class="text-dim text-xs">github.com/VoltAgent</div>
-    </li>
   </ul>
 </div>
 
