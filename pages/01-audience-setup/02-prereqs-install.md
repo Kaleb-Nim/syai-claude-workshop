@@ -17,25 +17,32 @@ no Claude account, no billing setup, no OAuth — the key is all you need
 
 ---
 
-# Install Claude Code — 3 commands
+# Install Claude Code — 3 steps in your terminal
+
+<div class="text-sm opacity-70 mb-2">1 · install the CLI globally</div>
 
 ```bash
-# 1. install the CLI globally
 npm install -g @anthropic-ai/claude-code
-
-# 2. set the API key we gave you (this terminal only)
-export ANTHROPIC_API_KEY=sk-ant-...
-
-# 3. verify, then launch
-claude --version
-claude
 ```
 
-<div class="text-dim text-sm mt-4">
-first run drops you into an interactive session. type a message, hit enter.<br/>
-exit with <code>/exit</code> or <kbd>Ctrl-D</kbd>. you're ready.
-</div>
+<div class="text-sm opacity-70 mt-4 mb-2">2 · export the API key (this terminal only)</div>
 
-<div class="text-sm mt-6 opacity-70">
-stuck? raise a hand — we'll get you unblocked before slide 4.
+```bash
+export ANTHROPIC_API_KEY=sk-ant-...
+```
+
+<div class="text-sm opacity-70 mt-4 mb-2">3 · run <code>claude</code> — when it asks about the key, pick <b>Yes</b></div>
+
+```text
+Detected a custom API key in your environment
+
+ANTHROPIC_API_KEY: sk-ant-...CgAA
+
+Do you want to use this API key?
+❯ 1. Yes
+  2. No (recommended)
+```
+
+<div class="text-dim text-xs mt-2">
+the "No (recommended)" default assumes OAuth login — today, pick <b>Yes</b> to use the workshop key.
 </div>
