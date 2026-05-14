@@ -1,10 +1,8 @@
----
-layout: two-cols
----
-
 # Skills in the wild
 
-<template #default>
+<div class="grid grid-cols-2 gap-8 mt-4">
+
+<div>
 
 **`frontend-design`** — pixel-faithful UI
 
@@ -19,14 +17,13 @@ description: Use when building or
   system.
 ```
 
-<div class="text-dim text-sm mt-4">
-Fires on "build me a card like this",
-"match our design system", screenshot drops.
+<div class="text-dim text-sm mt-3">
+Fires on "build me a card like this", "match our design system", screenshot drops.
 </div>
 
-</template>
+</div>
 
-<template #right>
+<div>
 
 **`webapp-testing`** — Playwright UX checks
 
@@ -40,14 +37,15 @@ description: Use when verifying a user
   errors. Returns a pass/fail report.
 ```
 
-<div class="text-dim text-sm mt-4">
-Fires on "does the checkout still work",
-"smoke-test the login page".
+<div class="text-dim text-sm mt-3">
+Fires on "does the checkout still work", "smoke-test the login page".
 </div>
 
-</template>
+</div>
 
-<div class="absolute bottom-6 left-12 right-12 text-xs opacity-70 border-t border-white/10 pt-3">
+</div>
+
+<div class="text-xs opacity-70 mt-8 pt-3 border-t border-white/10">
   <span class="opacity-50">More skills →</span>
   &nbsp;<a href="https://github.com/anthropics/skills" target="_blank">anthropics/skills</a>
   &nbsp;·&nbsp; <a href="https://docs.claude.com/en/docs/agents-and-tools/agent-skills/overview" target="_blank">docs.claude.com — Agent Skills</a>
