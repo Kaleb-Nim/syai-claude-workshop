@@ -76,3 +76,98 @@
 .slidev-layout .text-dim {
   color: var(--text-dim);
 }
+
+/*
+ * Backed slides (opt-in via `class: bg-slide` in frontmatter alongside
+ * `background: /bg/<file>.png`). The image is applied by Slidev as a
+ * cover background on the slide container; we layer a left-weighted
+ * dark gradient overlay for headline legibility and drop the solid
+ * bg-main color so the image actually shows through.
+ */
+.slidev-layout.bg-slide {
+  background-color: transparent;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.slidev-layout.bg-skills-essence       { background-image: url('/bg/skills-essence.png'); }
+.slidev-layout.bg-skills-scale         { background-image: url('/bg/skills-scale.png'); }
+.slidev-layout.bg-skills-self-invocation { background-image: url('/bg/skills-self-invocation.png'); }
+
+.slidev-layout.bg-slide::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(26, 23, 20, 0.85) 0%,
+    rgba(26, 23, 20, 0.65) 45%,
+    rgba(26, 23, 20, 0.35) 100%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.slidev-layout.bg-slide > * {
+  position: relative;
+  z-index: 1;
+}
+
+/*
+ * Collapsible SKILL.md panel used on the "Skills in the wild" slide.
+ * Scoped under .slidev-layout so the presenter sidebar is unaffected.
+ * The outer <details> supplies the rust left rule and code-tinted
+ * background; the inner Shiki <pre> drops its own border to avoid
+ * double rules and gets a max-height + scroll for long SKILL.md files.
+ */
+.slidev-layout .skill-details {
+  border-left: 2px solid var(--accent);
+  background-color: var(--surface-code);
+  margin-top: 0.5rem;
+}
+
+.slidev-layout .skill-details > summary {
+  cursor: pointer;
+  padding: 0.4rem 0.8rem;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  user-select: none;
+  list-style: none;
+}
+
+.slidev-layout .skill-details > summary::before {
+  content: '▸ ';
+  display: inline-block;
+  color: var(--accent);
+}
+
+.slidev-layout .skill-details[open] > summary::before {
+  content: '▾ ';
+}
+
+.slidev-layout .skill-details[open] > summary {
+  color: var(--text-main);
+  border-bottom: 1px solid rgba(244, 236, 224, 0.1);
+}
+
+.slidev-layout .skill-details pre[class*="shiki"] {
+  max-height: 22rem;
+  overflow-y: auto;
+  border-left: 0;
+  margin: 0;
+}
+
+.slidev-layout.bg-slide blockquote {
+  border-left-color: var(--accent);
+  font-style: normal;
+  font-size: 1.4em;
+  line-height: 1.4;
+  max-width: 28ch;
+  background: transparent;
+}
