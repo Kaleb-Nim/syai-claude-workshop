@@ -176,8 +176,6 @@ model: {{ current.model }}
   border-radius: 4px;
   padding: 0.6rem 0.8rem;
   margin: 0;
-  max-height: 48vh;
-  overflow-y: auto;
   white-space: pre-wrap;
 }
 

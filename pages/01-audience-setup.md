@@ -5,6 +5,9 @@ src: ./01-audience-setup/01-cover.md
 src: ./01-audience-setup/02-prereqs-install.md
 ---
 ---
+src: ./01-audience-setup/02b-switch-to-haiku.md
+---
+---
 src: ./01-audience-setup/03-who-this-is-for.md
 ---
 ---

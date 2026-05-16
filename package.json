@@ -16,5 +16,8 @@
     "@slidev/cli": "^52.15",
     "@slidev/theme-default": "latest",
     "vue": "^3.5.33"
+  },
+  "devDependencies": {
+    "playwright": "^1.60.0"
   }
 }

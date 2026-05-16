@@ -13,16 +13,6 @@
 
 ---
 
-# Where context lives
-
-> Context — Skills: Shares your main chat context · Subagents: Gets its own isolated context window
-
-<div class="text-dim text-sm mt-6">
-  the structural difference — Section 03 unpacks why that matters
-</div>
-
----
-
 # Default to the lighter tool
 
 > Start with a skill unless you specifically need subagent features. Skills are simpler, faster, and easier to maintain.

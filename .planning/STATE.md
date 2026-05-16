@@ -3,15 +3,15 @@ gsd_state_version: 1.0
 milestone: v1.1
 milestone_name: workshop-content-v2
 status: executing
-stopped_at: Phases 2 + 3 complete (chapter order swapped 2026-05-13)
-last_updated: "2026-05-13T00:00:00.000Z"
-last_activity: 2026-05-13 -- chapter swap: skills now Ch 2, hooks now Ch 3
+stopped_at: Phase 03 (Hooks) Plan 06 closed — QUAL-01 build-verify approved
+last_updated: "2026-05-13T11:10:28.327Z"
+last_activity: 2026-05-13 -- Phase 04 execution started
 progress:
   total_phases: 5
   completed_phases: 3
-  total_plans: 21  # phases 4+5 plan counts TBD via /gsd-plan-phase
+  total_plans: 29
   completed_plans: 21
-  percent: 60  # 3/5 phases complete
+  percent: 72
 ---
 
 # Project State: syai-claude-workshop
@@ -25,14 +25,14 @@ See: `.planning/PROJECT.md` (updated 2026-05-12 after v1.0 close)
 
 **Core value:** Participants can follow the workshop live and return to the same URL afterward to step through the material at their own pace — without losing place, formatting, or copyable code.
 
-**Current focus:** Phase 4 — Subagents + Agent SDK (next)
+**Current focus:** Phase 04 — subagents
 
 ## Current Position
 
 Phases 2 (Skills) and 3 (Hooks) complete; chapter order swapped 2026-05-13 (skills now Ch 2, hooks now Ch 3).
-Phase: 04 (subagents-sdk) — NOT STARTED
-Plan: 0 of TBD
-Last activity: 2026-05-13 -- chapter swap committed
+Phase: 04 (subagents) — EXECUTING
+Plan: 1 of 8
+Last activity: 2026-05-13 -- Phase 04 execution started
 
 ## Deferred Items
 
@@ -53,6 +53,7 @@ Items acknowledged and deferred at v1.0 close on 2026-05-12:
 | e98-top-progress-bar | 2026-05-11 | Top-of-viewport progress bar via Slidev `global-top` global layer | `global-top.vue` | `99434b6` |
 | prereqs-install-slides | 2026-05-12 | Added 2-slide prerequisites section (requirements + API-key install) for super-beginner participants; renumbered 02–06 → 03–07 | `pages/01-audience-setup/02-prereqs-install.md`, `pages/01-audience-setup.md` | `827126b` |
 | resources-page | 2026-05-13 | Added end-of-deck Resources chapter listing 5 references that informed the workshop | `pages/99-resources/01-resources.md`, `pages/99-resources.md`, `slides.md` | `d419ebe` |
+| claude-skills-video-transcript | 2026-05-13 | Pulled + cleaned the official Claude "What are skills?" YouTube transcript and parked it beside Chapter 2 plans as a citation source for slide authoring | `.planning/phases/02-skills/02-VIDEO-TRANSCRIPT-what-are-skills.md` | _pending_ |
 
 ## Accumulated Context
 

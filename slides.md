@@ -45,6 +45,9 @@ src: ./pages/01-audience-setup.md
 src: ./pages/02-skills.md
 ---
 ---
+src: ./pages/02b-external-clis.md
+---
+---
 src: ./pages/03-hooks.md
 ---
 ---

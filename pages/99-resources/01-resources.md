@@ -6,6 +6,12 @@ layout: default
 
 References used while building this workshop — bookmark, skim later.
 
+<a href="https://github.com/gsd-build/get-shit-done" target="_blank" class="gsd-callout mt-6">
+  <div class="gsd-callout-tag">For advanced users · the one thing to grab</div>
+  <div class="gsd-callout-title">get-shit-done <span class="gsd-arrow">→</span></div>
+  <div class="gsd-callout-sub">gsd-build/get-shit-done — planning + execution framework that runs on top of Claude Code. If you take one link home, take this.</div>
+</a>
+
 <div class="grid grid-cols-2 gap-x-8 gap-y-4 mt-6 text-sm">
 
 <div>
@@ -61,3 +67,50 @@ References used while building this workshop — bookmark, skim later.
 <div class="text-dim text-xs mt-10">
   Workshop deck stays live at this URL — return any time to step through at your own pace.
 </div>
+
+<style scoped>
+.gsd-callout {
+  display: block;
+  border: 1px solid rgba(215, 119, 87, 0.55);
+  background: linear-gradient(135deg, rgba(215, 119, 87, 0.10), rgba(215, 119, 87, 0.02));
+  border-radius: 10px;
+  padding: 0.9em 1.1em;
+  text-decoration: none !important;
+  transition: border-color 0.15s ease, transform 0.15s ease, background 0.15s ease;
+}
+.gsd-callout:hover {
+  border-color: rgba(215, 119, 87, 1);
+  background: linear-gradient(135deg, rgba(215, 119, 87, 0.18), rgba(215, 119, 87, 0.04));
+  transform: translateY(-1px);
+}
+.gsd-callout-tag {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgb(215, 119, 87);
+  margin-bottom: 0.3em;
+}
+.gsd-callout-title {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+}
+.gsd-callout:hover .gsd-arrow {
+  transform: translateX(3px);
+}
+.gsd-arrow {
+  color: rgb(215, 119, 87);
+  display: inline-block;
+  transition: transform 0.15s ease;
+}
+.gsd-callout-sub {
+  font-size: 0.78rem;
+  color: rgba(220, 220, 220, 0.75);
+  margin-top: 0.35em;
+  line-height: 1.45;
+}
+</style>

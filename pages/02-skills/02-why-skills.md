@@ -21,17 +21,33 @@ Every new teammate (including Claude, every time) picks it up only when that job
 </div>
 
 ---
+class: bg-slide bg-skills-essence
+---
 
 # What skills are, in essence
 
 > Skills are procedural knowledge — a reusable 'how we do XYZ here' — packaged in a format Claude can discover and load itself.
 
 ---
+class: bg-slide bg-skills-scale
+---
 
 # Why this scales
 
+<div class="grid grid-cols-2 gap-8 items-center">
+
+<div>
+
 > CLAUDE.md is always loaded. A skill is loaded when needed. That distinction is why a 50-skill library doesn't slow Claude down, but a 5,000-line CLAUDE.md does.
 
+</div>
+
+<img src="/context-usage.png" class="rounded-lg shadow-lg w-full" alt="Claude Code /context usage breakdown" />
+
+</div>
+
+---
+class: bg-slide bg-skills-self-invocation
 ---
 
 # The self-invocation moment

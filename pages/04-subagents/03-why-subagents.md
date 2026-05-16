@@ -12,6 +12,8 @@ That's context bloat.
 
 # Subagents get their own window
 
+> Context — Skills: Shares your main chat context · Subagents: Gets its own isolated context window
+
 A subagent runs in an isolated context window. Tool calls, intermediate reasoning, file contents — all of it lives inside the subagent, not your main chat.
 
 Only the final summary returns to you.
@@ -27,11 +29,3 @@ Only the final summary returns to you.
 <div class="text-dim text-sm mt-6">
   in every case, the heavy reading happens somewhere your main chat never has to load
 </div>
-
----
-
-# The trade
-
-You give up live visibility into the subagent's intermediate steps. You get back a clean main chat and consistent quality across long sessions.
-
-That's the deal. Section 04 is how you actually wire one.
